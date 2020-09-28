@@ -2,15 +2,17 @@ body {
     font: 400 15px Tahoma, sans-serif; /*Familia sans-serif*/
     line-height: 1.8;
     color: rgb(0, 0, 0);
-    background-color: #f6f6f6;
+    background-color: whitesmoke;
     padding-left: 50px;
     padding-right: 50px;
 }
-h1 {
-    color: rgb(0, 0, 0);
+h1.title {
+    visibility: hidden;
+    font-size: 0px;
+    /**color: rgb(0, 0, 0);
     text-transform: uppercase;
     padding: 50px 25px;
-    text-align: center;
+    text-align: center;**/
 }
 table {
     text-align: left;
@@ -33,6 +35,10 @@ td {
     border-right: 1px solid black;
 }
 
+header {
+    text-align: center;
+}
+
 footer {
     margin-top: 50px;
     padding: 20px;
@@ -44,6 +50,11 @@ footer {
     padding-right: 20px;
     padding-bottom: 10px;
     float: left;
+}
+
+.titulo {
+    height: 300px;
+    align-self: center;
 }
 
 a:link {

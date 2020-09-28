@@ -1,0 +1,62 @@
+body {
+    font: 400 15px Tahoma, sans-serif; /*Familia sans-serif*/
+    line-height: 1.8;
+    color: rgb(0, 0, 0);
+    background-color: #f6f6f6;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 50px 25px;
+    text-align: center;
+}
+table {
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+    background-color: gray;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+td {
+    background-color: lightgray;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-right: 1px solid black;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.incrustada {
+    height: 300px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+a:link {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: sandybrown;
+    text-decoration: underline;
+}

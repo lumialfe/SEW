@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+th > a > img {
+    height: 140pt;
+    width: 100pt;
+    margin: 20px;
+}

@@ -1,12 +1,15 @@
+/*Especificidad: 1*/
 table {
     width: 100%;
     text-align: center;
 }
 
+/*Especificidad: 1*/
 th {
     text-align: center;
 }
 
+/*Especificidad: 3*/
 th > a > img {
     height: 140pt;
     width: 100pt;

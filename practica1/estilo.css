@@ -3,63 +3,32 @@ body {
     line-height: 1.8;
     color: rgb(0, 0, 0);
     background-color: whitesmoke;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 90%;
 }
+
 h1 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    padding: 50px 25px;
-    text-align: center;
-    position: static;
-    margin-top: 100px;
 }
+
 table {
-    text-align: left;
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 th {
     background-color: gray;
     font-weight: bold;
-    padding-right: 20px;
-    padding-left: 10px;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
 }
 
 td {
     background-color: lightgray;
-    padding-right: 20px;
-    padding-left: 10px;
     border-right: 1px solid black;
 }
 
-header {
-    width: 100%;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-}
-
 footer {
-    margin-top: 50px;
-    padding: 20px;
     background-color: lightgray;
-}
-
-footer > a > img {
-    height: 50px;
-    width: 50px;
-}
-
-main > img {
-    height: 300px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    float: left;
 }
 
 a:link {
@@ -78,17 +47,10 @@ a:hover {
 }
 
 nav {
-    position: static;
-    align-self: center;
-    width: 100%;
     background-color: lightgray;
-    float: left;
 }
 
 nav > a {
     list-style-type: none;
-    width: 25%;
-    float: left;
-    text-align: center;
     font-size: large;
 }

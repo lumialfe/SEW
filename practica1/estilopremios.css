@@ -4,3 +4,7 @@ table {
     text-align: left;
     position: static;
 }
+
+th {
+    background-color: gray;
+}

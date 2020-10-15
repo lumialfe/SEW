@@ -7,7 +7,7 @@ table {
 /*Especificidad: 1*/
 th {
     text-align: center;
-    background-color: white;
+    background-color: lightgray;
 }
 
 /*Especificidad: 3*/

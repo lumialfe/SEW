@@ -6,5 +6,10 @@ table {
 }
 
 th {
-    background-color: gray;
+    color: #B38A58;
+    background-color: #001514;
+}
+
+td {
+    color: #B38A58;
 }

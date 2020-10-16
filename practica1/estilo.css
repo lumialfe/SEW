@@ -1,55 +1,60 @@
 body {
-    font: 400 15px Tahoma, sans-serif; /*Familia sans-serif*/
+    font: 400 15px "Arial", Helvetica, sans-serif; /*Familia sans-serif*/
     line-height: 1.8;
     color: rgb(0, 0, 0);
-    background-color: whitesmoke;
-    background-image: url(multimedia/bg.png);
+    background-color: #001514;
+    background-image: url(multimedia/bgDark.png);
     background-attachment: fixed;
     background-repeat: repeat;
 }
 
 h1 {
     color: rgb(0, 0, 0);
+    color: #B38A58;
     text-transform: uppercase;
 }
 
+p {
+    color: #DBC8A9;
+}
+
 table {
-    border: 1px solid black;
+    border: 1px solid #B38A58;
     border-collapse: collapse;
 }
 
 th {
     font-weight: bold;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    border-bottom: 1px solid #B38A58;
+    border-right: 1px solid #B38A58;
 }
 
 td {
-    background-color: lightgray;
-    border-right: 1px solid black;
+    background-color: #001514;
+    border-right: 1px solid #B38A58;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: #001514;
 }
 
 a:link {
-    color: midnightblue;
+    color: #B38A58;
     text-decoration: none;
 }
 
 a:visited {
-    color: midnightblue;
+    color: #B38A58;
     text-decoration: none;
 }
 
 a:hover {
-    color: sandybrown;
+    color: #F0052C;
     text-decoration: underline;
 }
 
 nav {
-    background-color: lightgray;
+    background-color: #001514;
 }
 
 nav > a {

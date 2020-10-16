@@ -1,4 +1,4 @@
-/*Especificidad: 2*/
+/*Especificidad: 1*/
 body {
     padding: 0px;
     margin: 0px;
@@ -8,13 +8,13 @@ body {
 body main {
     padding-left: 5%;
     padding-right: 5%;
-    width: 90%;
-    text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 /*Especificidad: 1*/
 h1 {
-    padding: 5% 5%;
+    padding: 5%;
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -90,4 +90,6 @@ nav > a {
 
 video {
     width: 80%;
+    display: block;
+    margin: 0 auto;
 }

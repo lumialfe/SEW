@@ -2,17 +2,24 @@
 table {
     width: 100%;
     text-align: center;
+    table-layout:fixed;
 }
 
 /*Especificidad: 1*/
 th {
     text-align: center;
-    background-color: lightgray;
+    background-color: #001514;
 }
 
 /*Especificidad: 3*/
 th > a > img {
     height: 140pt;
     width: 100pt;
-    margin: 20px;
+    float: left;
+    margin: 10%;
+}
+
+/*Especificidad: 3*/
+th > a :hover {
+    opacity: 50%;
 }

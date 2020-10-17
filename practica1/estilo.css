@@ -1,63 +1,72 @@
+/*Especificidad: 1*/
 body {
-    font: 400 15px "Arial", Helvetica, sans-serif; /*Familia sans-serif*/
+    font: 400 16px "Arial", Helvetica, sans-serif; /*Familia sans-serif*/
     line-height: 1.8;
     color: rgb(0, 0, 0);
+
     background-color: #001514;
     background-image: url(multimedia/bgDark.png);
     background-attachment: fixed;
     background-repeat: repeat;
 }
-
+/*Especificidad: 1*/
 h1 {
     color: rgb(0, 0, 0);
     color: #B38A58;
     text-transform: uppercase;
 }
-
+/*Especificidad: 1*/
 p {
     color: #DBC8A9;
 }
-
+/*Especificidad: 1*/
 table {
-    border: 1px solid #B38A58;
+    border: 2px solid #B38A58;
     border-collapse: collapse;
 }
-
+/*Especificidad: 1*/
 th {
     font-weight: bold;
-    border-bottom: 1px solid #B38A58;
-    border-right: 1px solid #B38A58;
+    border-bottom: 2px solid #B38A58;
+    border-right: 2px solid #B38A58;
 }
-
+/*Especificidad: 1*/
 td {
     background-color: #001514;
-    border-right: 1px solid #B38A58;
+    border-right: 2px solid #B38A58;
 }
-
+/*Especificidad: 1*/
 footer {
     background-color: #001514;
+    border-top: #B38A58 2px solid;
 }
-
+/*Especificidad: 2*/
 a:link {
     color: #B38A58;
     text-decoration: none;
 }
-
+/*Especificidad: 2*/
 a:visited {
     color: #B38A58;
     text-decoration: none;
 }
-
+/*Especificidad: 2*/
 a:hover {
     color: #F0052C;
     text-decoration: underline;
 }
-
+/*Especificidad: 1*/
 nav {
     background-color: #001514;
+    border-bottom: #B38A58 2px solid;
 }
-
+/*Especificidad: 2*/
 nav > a {
     list-style-type: none;
     font-size: large;
+}
+
+/*Especificidad: 1*/
+video {
+    border: #B38A58 2px solid;
 }

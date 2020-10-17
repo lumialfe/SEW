@@ -4,12 +4,12 @@ table {
     text-align: left;
     position: static;
 }
-
+/*Especificidad: 1*/
 th {
     color: #B38A58;
     background-color: #001514;
 }
-
+/*Especificidad: 1*/
 td {
     color: #B38A58;
 }

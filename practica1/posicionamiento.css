@@ -16,7 +16,8 @@ body main {
 h1 {
     padding: 5%;
     text-align: center;
-    margin-top: 1%;
+    display: inline-block;
+    margin-top: 5%;
     margin-bottom: 1%;
 }
 
@@ -57,7 +58,7 @@ header {
 }
 /*Especificidad: 1*/
 footer {
-    margin-top: 2%;
+    margin-top: 5%;
     padding: 2%;
     padding-top: 3%;
     text-align: left;
@@ -76,6 +77,7 @@ nav {
     height: 8%;
     float: left;
     position: fixed;
+    z-index: 99;
 }
 
 /*Especificidad: 2*/
@@ -88,6 +90,7 @@ nav > a {
     margin-top: 0.5em;
 }
 
+/*Espcificidad: 1*/
 video {
     width: 80%;
     display: block;

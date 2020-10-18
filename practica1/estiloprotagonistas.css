@@ -4,7 +4,6 @@ table {
     height: 50%;
     table-layout: fixed;
     position: relative;
-    text-align: center;
     margin: auto;
 }
 
@@ -14,20 +13,20 @@ th {
     background-color: #001514;
 }
 
-/*Especificidad: 2*/
-td img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+td {
+    text-align: center;
 }
 
 /*Especificidad: 3*/
 td > a > img {
-    height: 11em;
-    width: 8em;
+    max-height: 11em;
+    height: auto;
+    width: auto;
+    float: none;
+    margin: 1em;
 }
 
 /*Especificidad: 3*/
-t > a :hover {
+t > a :hover{
     opacity: 60%;
 }

@@ -1,8 +1,11 @@
 /*Especificidad: 1*/
 table {
-    width: 100%;
+    width: 70%;
+    height: 50%;
+    table-layout: fixed;
+    position: relative;
     text-align: center;
-    table-layout:fixed;
+    margin: auto;
 }
 
 /*Especificidad: 1*/
@@ -11,15 +14,20 @@ th {
     background-color: #001514;
 }
 
-/*Especificidad: 3*/
-th > a > img {
-    height: 140pt;
-    width: 100pt;
-    float: left;
-    margin: 10%;
+/*Especificidad: 2*/
+td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Especificidad: 3*/
-th > a :hover {
+td > a > img {
+    height: 11em;
+    width: 8em;
+}
+
+/*Especificidad: 3*/
+t > a :hover {
     opacity: 60%;
 }

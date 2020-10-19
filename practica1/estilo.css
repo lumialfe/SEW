@@ -52,7 +52,7 @@ a:visited {
 }
 /*Especificidad: 2*/
 a:hover {
-    color: #f05972;
+    color: #ffa6b5;
     text-decoration: underline;
 }
 /*Especificidad: 1*/

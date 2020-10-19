@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ruta_turistica SYSTEM "ruta.dtd">
+
+<rutas>
+
+    <ruta nombre = "Mirando al Mar" tipo ="Ruta a Caballo">
+        <dificultad>Accesible para todos</dificultad>
+        <fecha tipo="inicio"></fecha>
+        <hora tipo="inicio"></hora>
+        <duración>1 Hora</duración>
+        <agencia>Yumping.com</agencia>
+        <descripcion>Es una ruta de contacto con la naturaleza, disfrutando de los incomparables paisajes asturianos de mar y montaña.</descripcion>
+        <restriccion tipo ="edad">Niños a partir de 6 años</restriccion>
+        <inicio>Lamuño</inicio>
+        <direccion_inicio>CU-6, 2</direccion_inicio>
+        <coordenadas>
+            <longitud>43.5644678</longitud>
+            <latitud>-6.2118458</latitud>
+            <altitud>116</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://www.yumping.com/ofertas/rutas-a-caballo/asturias/ruta-a-caballo-en-lamuno-mirando-al-mar-1-hora--o22299</referencia>
+            <referencia></referencia>
+            <referencia></referencia>
+        </referencias>
+        <valoracion>8</valoracion>
+        <hitos>
+            <hito nombre="Lamuño">
+                <descripcion>Inicio de Ruta</descripcion>
+                <coordenadas>
+                    <longitud>43.5644678</longitud>
+                    <latitud>-6.2118458</latitud>
+                    <altitud>116</altitud>
+                </coordenadas>
+                <tiempo_desde_anterior></tiempo_desde_anterior>
+                <galeria>
+                    <fotos>
+                        <foto>
+                            https://media2.clubrural.com/img990x400/pueblos/asturias/lamuno/20160218201624-asturias-lamuno.jpg
+                        </foto>
+                        <foto>
+                        </foto>
+                        <foto>
+                        </foto>
+                        <foto>
+                        </foto>
+                        <foto>
+                        </foto>
+                    </fotos>
+                    <videos>
+                        <video></video>
+                        <video></video>
+                        <video></video>
+                    </videos>
+                </galeria>
+            </hito>
+
+            <hito nombre="Area Recreativa de Monte Balsera">
+                <descripcion>Punto de interés</descripcion>
+                <coordenadas>
+                    <longitud>43.57</longitud>
+                    <latitud>-6.21</latitud>
+                    <altitud>118</altitud>
+                </coordenadas>
+                <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
+                <galeria>
+                    <fotos>
+                        <foto>
+                            https://cmsphoto.ww-cdn.com/resizeapi/ffbd226e233c64ab80ab37ec776650559a1f8be6/3200/-1/
+                        </foto>
+                        <foto>
+                        </foto>
+                        <foto>
+                        </foto>
+                        <foto>
+                        </foto>
+                        <foto>
+                        </foto>
+                    </fotos>
+                    <videos>
+                        <video></video>
+                        <video></video>
+                        <video></video>
+                    </videos>
+                </galeria>
+            </hito>
+
+            <hito nombre="Concha de Artedo">
+                <descripcion>Fin de Ruta</descripcion>
+                <coordenadas>
+                    <longitud>43.3403</longitud>
+                    <latitud>-6.1131</latitud>
+                    <altitud>0</altitud>
+                </coordenadas>
+                <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
+                <galeria>
+                    <fotos>
+                        <foto>
+                            https://upload.wikimedia.org/wikipedia/commons/1/15/Concha_de_Artedo.JPG                       
+                        </foto>
+                        <foto>
+                                                    https://saposyprincesas.elmundo.es/wp-content/uploads/2019/07/playa-de-concha-de-artedo.jpg
+
+                        </foto>
+                        <foto>
+                            https://www.turismoasturias.es/documents/11022/13503/PlayaConchaArtedo3.jpg?t=1388684032544
+                        </foto>
+                        <foto>
+                        </foto>
+                        <foto>
+                        </foto>
+                    </fotos>
+                    <videos>
+                        <video>https://www.youtube.com/watch?v=p4KRIVzKtM0</video>
+                        <video></video>
+                        <video></video>
+                    </videos>
+                </galeria>
+            </hito>
+        </hitos>
+    </ruta>
+
+</rutas>
+
+</xml>

@@ -42,17 +42,17 @@ footer {
 }
 /*Especificidad: 2*/
 a:link {
-    color: #B38A58;
+    color: #d3b795;
     text-decoration: none;
 }
 /*Especificidad: 2*/
 a:visited {
-    color: #B38A58;
+    color: #d3b795;
     text-decoration: none;
 }
 /*Especificidad: 2*/
 a:hover {
-    color: #F0052C;
+    color: #f05972;
     text-decoration: underline;
 }
 /*Especificidad: 1*/

@@ -1,5 +1,6 @@
 /*Especificidad: 1*/
 table {
+    font-size: 20px;
     width: 100%;
     text-align: left;
     position: static;

@@ -61,8 +61,7 @@ nav {
     border-bottom: #B38A58 2px solid;
 }
 /*Especificidad: 2*/
-nav > a {
-    list-style-type: none;
+nav > div > a {
     font-size: large;
 }
 

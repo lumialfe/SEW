@@ -1,125 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ruta_turistica SYSTEM "ruta.dtd">
+<!DOCTYPE ruta_turistica SYSTEM "ruta_turistica.dtd">
+    <rutas>
+        <ruta nombre = "Mirando al Mar" tipo ="Ruta a Caballo">
+            <dificultad>Accesible para todos</dificultad>
+            <fecha tipo="inicio"></fecha>
+            <hora tipo="inicio"></hora>
+            <duración>1 Hora</duración>
+            <agencia>Yumping.com</agencia>
+            <descripcion>Es una ruta de contacto con la naturaleza, disfrutando de los incomparables paisajes asturianos de mar y montaña.</descripcion>
+            <restricciones>
+                <restriccion tipo ="edad">Niños a partir de 6 años</restriccion>
+            </restricciones>
+            <inicio>Lamuño</inicio>
+            <direccion_inicio>CU-6, 2</direccion_inicio>
+            <coordenadas>
+                <longitud>43.5644678</longitud>
+                <latitud>-6.2118458</latitud>
+                <altitud>116</altitud>
+            </coordenadas>
+            <referencias>
+                <referencia>https://www.yumping.com/ofertas/rutas-a-caballo/asturias/ruta-a-caballo-en-lamuno-mirando-al-mar-1-hora--o22299</referencia>
+                <referencia></referencia>
+                <referencia></referencia>
+            </referencias>
+            <valoracion>8</valoracion>
+            <hitos>
+                <hito nombre="Lamuño">
+                    <descripcion>Inicio de Ruta</descripcion>
+                    <coordenadas>
+                        <longitud>43.5644678</longitud>
+                        <latitud>-6.2118458</latitud>
+                        <altitud>116</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior></tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://media2.clubrural.com/img990x400/pueblos/asturias/lamuno/20160218201624-asturias-lamuno.jpg
+                            </foto>
+                        </fotos>
+                    </galeria>
+                </hito>
 
-<rutas>
+                <hito nombre="Area Recreativa de Monte Balsera">
+                    <descripcion>Punto de interés</descripcion>
+                    <coordenadas>
+                        <longitud>43.57</longitud>
+                        <latitud>-6.21</latitud>
+                        <altitud>118</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://cmsphoto.ww-cdn.com/resizeapi/ffbd226e233c64ab80ab37ec776650559a1f8be6/3200/-1/
+                            </foto>
+                        </fotos>
+                    </galeria>
+                </hito>
 
-    <ruta nombre = "Mirando al Mar" tipo ="Ruta a Caballo">
-        <dificultad>Accesible para todos</dificultad>
-        <fecha tipo="inicio"></fecha>
-        <hora tipo="inicio"></hora>
-        <duración>1 Hora</duración>
-        <agencia>Yumping.com</agencia>
-        <descripcion>Es una ruta de contacto con la naturaleza, disfrutando de los incomparables paisajes asturianos de mar y montaña.</descripcion>
-        <restriccion tipo ="edad">Niños a partir de 6 años</restriccion>
-        <inicio>Lamuño</inicio>
-        <direccion_inicio>CU-6, 2</direccion_inicio>
-        <coordenadas>
-            <longitud>43.5644678</longitud>
-            <latitud>-6.2118458</latitud>
-            <altitud>116</altitud>
-        </coordenadas>
-        <referencias>
-            <referencia>https://www.yumping.com/ofertas/rutas-a-caballo/asturias/ruta-a-caballo-en-lamuno-mirando-al-mar-1-hora--o22299</referencia>
-            <referencia></referencia>
-            <referencia></referencia>
-        </referencias>
-        <valoracion>8</valoracion>
-        <hitos>
-            <hito nombre="Lamuño">
-                <descripcion>Inicio de Ruta</descripcion>
-                <coordenadas>
-                    <longitud>43.5644678</longitud>
-                    <latitud>-6.2118458</latitud>
-                    <altitud>116</altitud>
-                </coordenadas>
-                <tiempo_desde_anterior></tiempo_desde_anterior>
-                <galeria>
-                    <fotos>
-                        <foto>
-                            https://media2.clubrural.com/img990x400/pueblos/asturias/lamuno/20160218201624-asturias-lamuno.jpg
-                        </foto>
-                        <foto>
-                        </foto>
-                        <foto>
-                        </foto>
-                        <foto>
-                        </foto>
-                        <foto>
-                        </foto>
-                    </fotos>
-                    <videos>
-                        <video></video>
-                        <video></video>
-                        <video></video>
-                    </videos>
-                </galeria>
-            </hito>
+                <hito nombre="Concha de Artedo">
+                    <descripcion>Fin de Ruta</descripcion>
+                    <coordenadas>
+                        <longitud>43.3403</longitud>
+                        <latitud>-6.1131</latitud>
+                        <altitud>0</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://upload.wikimedia.org/wikipedia/commons/1/15/Concha_de_Artedo.JPG                       
+                            </foto>
+                            <foto>
+                                https://saposyprincesas.elmundo.es/wp-content/uploads/2019/07/playa-de-concha-de-artedo.jpg
 
-            <hito nombre="Area Recreativa de Monte Balsera">
-                <descripcion>Punto de interés</descripcion>
-                <coordenadas>
-                    <longitud>43.57</longitud>
-                    <latitud>-6.21</latitud>
-                    <altitud>118</altitud>
-                </coordenadas>
-                <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
-                <galeria>
-                    <fotos>
-                        <foto>
-                            https://cmsphoto.ww-cdn.com/resizeapi/ffbd226e233c64ab80ab37ec776650559a1f8be6/3200/-1/
-                        </foto>
-                        <foto>
-                        </foto>
-                        <foto>
-                        </foto>
-                        <foto>
-                        </foto>
-                        <foto>
-                        </foto>
-                    </fotos>
-                    <videos>
-                        <video></video>
-                        <video></video>
-                        <video></video>
-                    </videos>
-                </galeria>
-            </hito>
+                            </foto>
+                            <foto>
+                                https://www.turismoasturias.es/documents/11022/13503/PlayaConchaArtedo3.jpg?t=1388684032544
+                            </foto>
+                        </fotos>
+                        <videos>
+                            <video>https://www.youtube.com/watch?v=p4KRIVzKtM0</video>
+                        </videos>
+                    </galeria>
+                </hito>
+            </hitos>
+        </ruta>
 
-            <hito nombre="Concha de Artedo">
-                <descripcion>Fin de Ruta</descripcion>
-                <coordenadas>
-                    <longitud>43.3403</longitud>
-                    <latitud>-6.1131</latitud>
-                    <altitud>0</altitud>
-                </coordenadas>
-                <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
-                <galeria>
-                    <fotos>
-                        <foto>
-                            https://upload.wikimedia.org/wikipedia/commons/1/15/Concha_de_Artedo.JPG                       
-                        </foto>
-                        <foto>
-                                                    https://saposyprincesas.elmundo.es/wp-content/uploads/2019/07/playa-de-concha-de-artedo.jpg
+        <ruta nombre = "Ruta a Caballo en Arriondas" tipo ="Ruta a Caballo">
+            <dificultad>Accesible para todos</dificultad>
+            <fecha tipo="inicio"></fecha>
+            <hora tipo="inicio"></hora>
+            <duración>1 Hora</duración>
+            <duración>2 Horas</duración>
+            <agencia>aventurasenasturias.com</agencia>
+            <descripcion>Estas rutas recorren bosques y montañas con impresionantes vistas de la Cordillera del Sueve y de los Picos de Europa.</descripcion>
+            <restricciones>
+                <restriccion tipo ="edad">Niños a partir de 9 años</restriccion>
+                <restriccion tipo ="altura">Niños a partir de 1.30m</restriccion>
+            </restricciones>           
+            <inicio>Arriondas</inicio>
+            <direccion_inicio>Cuadras de Arriondas</direccion_inicio>
+            <coordenadas>
+                <longitud>43.2325</longitud>
+                <latitud>-5.1110</latitud>
+                <altitud>36</altitud>
+            </coordenadas>
+            <referencias>
+                <referencia>https://www.aventurasenasturias.com/aventuras_en_asturias_actividades.php?aventurasID=171</referencia>
+                <referencia></referencia>
+                <referencia></referencia>
+            </referencias>
+            <valoracion>9</valoracion>
+            <hitos>
+                <hito nombre="Arriondas">
+                    <descripcion>Inicio de Ruta</descripcion>
+                    <coordenadas>
+                        <longitud>43.2325</longitud>
+                        <latitud>-5.1110</latitud>
+                        <altitud>36</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior></tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://lh3.googleusercontent.com/proxy/pzCWwpvxnEdBdXHdR-n7n9tHAdt__4UF374BZYMfMXR2089NWQUCE2059WTFWmIh9Oz2rPMa-MIQJYfL8xmDVyIKosdAHn_yqRx2-64M5QZypVVJ2yVBJkfioEG9HxpOub89-w                        
+                            </foto>
+                        </fotos>
+                    </galeria>
+                </hito>
 
-                        </foto>
-                        <foto>
-                            https://www.turismoasturias.es/documents/11022/13503/PlayaConchaArtedo3.jpg?t=1388684032544
-                        </foto>
-                        <foto>
-                        </foto>
-                        <foto>
-                        </foto>
-                    </fotos>
-                    <videos>
-                        <video>https://www.youtube.com/watch?v=p4KRIVzKtM0</video>
-                        <video></video>
-                        <video></video>
-                    </videos>
-                </galeria>
-            </hito>
-        </hitos>
-    </ruta>
+                <hito nombre="Coviella">
+                    <descripcion>Punto de interés</descripcion>
+                    <coordenadas>
+                        <longitud>43.2318</longitud>
+                        <latitud>-5.1023</latitud>
+                        <altitud>85</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://fotos01.lne.es/2011/08/06/318x200/2011-08-13_IMG_2011-08-06_03.06.07__6919826.jpg                        
+                            </foto>
+                        </fotos>
+                    </galeria>
+                </hito>
 
-</rutas>
+                <hito nombre="Picos de Europa">
+                    <descripcion>Fin de Ruta</descripcion>
+                    <coordenadas>
+                        <longitud>43.1106</longitud>
+                        <latitud>-4.4917</latitud>
+                        <altitud>2500</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://www.plea.es/sites/default/files/styles/plea_cabecera_blog/public/pico-urrellu-famoso-por-escaladas-realizadas-en-el.jpg?itok=KiIO4fK7                        </foto>
+                            <foto>
+                                https://www.turismoasturias.es/documents/11022/4994980/PORTADA-bulnes-Mampiris.jpg/25820526-124c-4430-a2a0-9716a472fa62?t=1588852703233
+                            </foto>
+                            <foto>
+                                https://i.blogs.es/b922c5/el-parque-nacional-picos-de-europa-cumple-100-anos/1366_2000.jpg                        </foto>
+                            <foto>
+                            </foto>
+                            <foto>
+                            </foto>
+                        </fotos>
+                        <videos>
+                            <video>https://www.youtube.com/watch?v=FHgKpk1SyAM</video>
+                            <video></video>
+                            <video></video>
+                        </videos>
+                    </galeria>
+                </hito>
+            </hitos>
+        </ruta>
 
-</xml>
+        <ruta nombre = "Caballos en Cudillero" tipo ="Ruta a Caballo">
+            <dificultad>Accesible para todos</dificultad>
+            <fecha tipo="inicio"></fecha>
+            <hora tipo="inicio"></hora>
+            <duración>2 Horas</duración>
+            <agencia>aventurasenasturias.com</agencia>
+            <descripcion>Estas rutas se realizan en el entorno de Cudillero, en la zona central de Asturias cerca de Avilés, Gijón y de Oviedo.</descripcion>
+            <restricciones>
+                <restriccion tipo ="edad">Niños a partir de 6 años</restriccion>
+                <restriccion tipo ="numero">Máximo de 12 personas</restriccion>
+            </restricciones>
+            <inicio>Cudillero</inicio>
+            <direccion_inicio>Hípica de Cudillero</direccion_inicio>
+            <coordenadas>
+                <longitud>43.3357</longitud>
+                <latitud>-6.1235</latitud>
+                <altitud>126</altitud>
+            </coordenadas>
+            <referencias>
+                <referencia>https://www.aventurasenasturias.com/aventuras_en_asturias_actividades.php?aventurasID=243</referencia>
+                <referencia></referencia>
+                <referencia></referencia>
+            </referencias>
+            <valoracion>7</valoracion>
+            <hitos>
+                <hito nombre="Cudillero">
+                    <descripcion>Inicio de Ruta</descripcion>
+                    <coordenadas>
+                        <longitud>43.3357</longitud>
+                        <latitud>-6.1235</latitud>
+                        <altitud>126</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior>0</tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://www.aventurasenasturias.com/upload/excursiones/31011755312.jpg?crc=3882001309
+                            </foto>
+                        </fotos>
+                    </galeria>
+                </hito>
+
+                <hito nombre="Area Recreativa de San Pedro de la Rivera">
+                    <descripcion>Punto de interés</descripcion>
+                    <coordenadas>
+                        <longitud>43.3438</longitud>
+                        <latitud>-6.1312</latitud>
+                        <altitud>4</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior>1</tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                                https://asturianinos.elcomercio.es/wp-content/uploads/2013/05/IMG_1631.jpg
+                            </foto>
+                            <foto>
+                                https://www.turismoasturias.es/documents/11022/173759/CT065_SanPedrodelaRibera_1.jpg
+                            </foto>
+                            <foto>
+                                https://imgs-akamai.mnstatic.com/8c/9b/8c9ba5b2396f406edb2f47a4f5e9b4ea.jpg
+                            </foto>
+                        </fotos>
+                        <videos>
+                            <video>https://www.youtube.com/watch?v=tTg_D7Az_XQ</video>
+                        </videos>
+                    </galeria>
+                </hito>
+
+                <hito nombre="Oviñana">
+                    <descripcion>Fin de Ruta</descripcion>
+                    <coordenadas>
+                        <longitud>43.3439</longitud>
+                        <latitud>-6.1419</latitud>
+                        <altitud>104</altitud>
+                    </coordenadas>
+                    <tiempo_desde_anterior>1</tiempo_desde_anterior>
+                    <galeria>
+                        <fotos>
+                            <foto>
+                               https://lh3.googleusercontent.com/proxy/ujww8OYyJ8z-7lO1bQBKOFOtxHQFcVA2MmDQvO5mKfVUclaf9dfPlLHF6FJA6By4wSG2BmVhymiP6tBYqQSH7TQYN1TR6Up-EjpiDrBU6lC_1fLaw8NTAokTVy0c1PlCWZH9KdGtTLW9zCI                        
+                            </foto>
+                            <foto>
+                                https://www.turismoasturias.es/documents/11022/4994980/PORTADA-bulnes-Mampiris.jpg/25820526-124c-4430-a2a0-9716a472fa62?t=1588852703233
+                            </foto>
+                        </fotos>
+                    </galeria>
+                </hito>
+            </hitos>
+        </ruta>
+
+
+    </rutas>

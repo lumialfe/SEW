@@ -5,7 +5,7 @@
             <dificultad>Accesible para todos</dificultad>
             <fecha tipo="inicio"></fecha>
             <hora tipo="inicio"></hora>
-            <duración>1 Hora</duración>
+            <duración>1</duración>
             <agencia>Yumping.com</agencia>
             <descripcion>Es una ruta de contacto con la naturaleza, disfrutando de los incomparables paisajes asturianos de mar y montaña.</descripcion>
             <restricciones>
@@ -20,19 +20,19 @@
             </coordenadas>
             <referencias>
                 <referencia>https://www.yumping.com/ofertas/rutas-a-caballo/asturias/ruta-a-caballo-en-lamuno-mirando-al-mar-1-hora--o22299</referencia>
-                <referencia></referencia>
-                <referencia></referencia>
+                <referencia>https://www.yumping.com/rutas-a-caballo/asturias</referencia>
+                <referencia>https://www.yumping.com/rutas-a-caballo/asturias/lamuno-cudillero</referencia>
             </referencias>
             <valoracion>8</valoracion>
             <hitos>
                 <hito nombre="Lamuño">
                     <descripcion>Inicio de Ruta</descripcion>
                     <coordenadas>
-                        <longitud>43.5644678</longitud>
-                        <latitud>-6.2118458</latitud>
+                        <longitud>43.56446</longitud>
+                        <latitud>-6.21184</latitud>
                         <altitud>116</altitud>
                     </coordenadas>
-                    <tiempo_desde_anterior></tiempo_desde_anterior>
+                    <tiempo_desde_anterior>0</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
                             <foto>
@@ -92,8 +92,8 @@
             <dificultad>Accesible para todos</dificultad>
             <fecha tipo="inicio"></fecha>
             <hora tipo="inicio"></hora>
-            <duración>1 Hora</duración>
-            <duración>2 Horas</duración>
+            <duración>1</duración>
+            <duración>2</duración>
             <agencia>aventurasenasturias.com</agencia>
             <descripcion>Estas rutas recorren bosques y montañas con impresionantes vistas de la Cordillera del Sueve y de los Picos de Europa.</descripcion>
             <restricciones>
@@ -109,8 +109,8 @@
             </coordenadas>
             <referencias>
                 <referencia>https://www.aventurasenasturias.com/aventuras_en_asturias_actividades.php?aventurasID=171</referencia>
-                <referencia></referencia>
-                <referencia></referencia>
+                <referencia>https://www.yumping.com/rutas-a-caballo/asturias/arriondas</referencia>
+                <referencia>https://www.loscauces.com/rutas-a-caballo-en-asturias/</referencia>
             </referencias>
             <valoracion>9</valoracion>
             <hitos>
@@ -121,7 +121,7 @@
                         <latitud>-5.1110</latitud>
                         <altitud>36</altitud>
                     </coordenadas>
-                    <tiempo_desde_anterior></tiempo_desde_anterior>
+                    <tiempo_desde_anterior>0</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
                             <foto>
@@ -184,7 +184,7 @@
             <dificultad>Accesible para todos</dificultad>
             <fecha tipo="inicio"></fecha>
             <hora tipo="inicio"></hora>
-            <duración>2 Horas</duración>
+            <duración>2</duración>
             <agencia>aventurasenasturias.com</agencia>
             <descripcion>Estas rutas se realizan en el entorno de Cudillero, en la zona central de Asturias cerca de Avilés, Gijón y de Oviedo.</descripcion>
             <restricciones>
@@ -200,8 +200,8 @@
             </coordenadas>
             <referencias>
                 <referencia>https://www.aventurasenasturias.com/aventuras_en_asturias_actividades.php?aventurasID=243</referencia>
-                <referencia></referencia>
-                <referencia></referencia>
+                <referencia>https://vivecudillero.com/item/aventuras-caballo/</referencia>
+                <referencia>http://www.todoactividades.com/es/actividades/rutas-a-caballo-playa-de-san-pedro-2-h-2178/</referencia>
             </referencias>
             <valoracion>7</valoracion>
             <hitos>

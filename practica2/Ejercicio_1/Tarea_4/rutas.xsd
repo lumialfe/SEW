@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns="http://tempuri.org/ruta_turistica" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ruta_turistica" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns="http://tempuri.org/rutas" elementFormDefault="qualified" targetNamespace="http://tempuri.org/rutas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="rutas">
     <xs:complexType>
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
@@ -11,9 +11,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="dificultad" />
-        <xs:element ref="fecha" />
-        <xs:element ref="hora" />
-        <xs:element minOccurs="1" maxOccurs="unbounded" ref="duración" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="fecha" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="hora" />
+        <xs:element ref="duración" />
         <xs:element ref="agencia" />
         <xs:element ref="descripcion" />
         <xs:element ref="restricciones" />
@@ -37,12 +37,16 @@
   </xs:element>
   <xs:element name="fecha">
     <xs:complexType>
-      <xs:attribute name="tipo" type="xs:NMTOKEN" use="required" />
+      <xs:simpleContent>
+        <xs:extension base="xs:string" />
+      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   <xs:element name="hora">
     <xs:complexType>
-      <xs:attribute name="tipo" type="xs:NMTOKEN" use="required" />
+      <xs:simpleContent>
+        <xs:extension base="xs:string" />
+      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   <xs:element name="duración">
@@ -122,10 +126,20 @@
       <xs:sequence>
         <xs:element ref="descripcion" />
         <xs:element ref="coordenadas" />
+        <xs:element ref="distancia_desde_anterior" />
         <xs:element ref="tiempo_desde_anterior" />
         <xs:element ref="galeria" />
       </xs:sequence>
       <xs:attribute name="nombre" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="distancia_desde_anterior">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="unidades" type="xs:string" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   <xs:element name="tiempo_desde_anterior">

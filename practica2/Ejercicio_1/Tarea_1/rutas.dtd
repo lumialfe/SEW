@@ -4,7 +4,7 @@
 <!ATTLIST rutas
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT ruta (dificultad,fecha,hora,duración+,agencia,descripcion,
+<!ELEMENT ruta (dificultad,fecha?,hora?,duración,agencia,descripcion,
                 restricciones,inicio,direccion_inicio,coordenadas,
                 referencias,valoracion,hitos)>
 <!ATTLIST ruta
@@ -16,15 +16,13 @@
 <!ATTLIST dificultad
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT fecha EMPTY>
+<!ELEMENT fecha (#PCDATA)>
 <!ATTLIST fecha
-  xmlns CDATA #FIXED ''
-  tipo NMTOKEN #REQUIRED>
+  xmlns CDATA #FIXED ''>
 
-<!ELEMENT hora EMPTY>
+<!ELEMENT hora (#PCDATA)>
 <!ATTLIST hora
-  xmlns CDATA #FIXED ''
-  tipo NMTOKEN #REQUIRED>
+  xmlns CDATA #FIXED ''>
 
 <!ELEMENT duración (#PCDATA)>
 <!ATTLIST duración
@@ -74,7 +72,8 @@
 
 <!ELEMENT distancia_desde_anterior (#PCDATA)>
 <!ATTLIST distancia_desde_anterior
-  xmlns CDATA #FIXED ''>
+  xmlns CDATA #FIXED ''
+  unidades CDATA #REQUIRED>
 
 <!ELEMENT tiempo_desde_anterior (#PCDATA)>
 <!ATTLIST tiempo_desde_anterior

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ruta_turistica SYSTEM "ruta_turistica.dtd">
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
     <rutas>
         <ruta nombre = "Mirando al Mar" tipo ="Ruta a Caballo">
             <dificultad>Facil</dificultad>
@@ -49,7 +49,7 @@
                         <latitud>-6.21</latitud>
                         <altitud>118</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">800</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">800</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -67,7 +67,7 @@
                         <latitud>-6.1131</latitud>
                         <altitud>0</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">2200</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">2200</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -120,7 +120,7 @@
                         <latitud>-5.1110</latitud>
                         <altitud>36</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
                     <tiempo_desde_anterior>0</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -138,7 +138,7 @@
                         <latitud>-5.1023</latitud>
                         <altitud>85</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">600</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">600</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -156,7 +156,7 @@
                         <latitud>-4.4917</latitud>
                         <altitud>2500</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">2800</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">2800</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -213,7 +213,7 @@
                         <latitud>-6.1235</latitud>
                         <altitud>126</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
                     <tiempo_desde_anterior>0</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -231,7 +231,7 @@
                         <latitud>-6.1312</latitud>
                         <altitud>4</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">1800</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">1800</distancia_desde_anterior>
                     <tiempo_desde_anterior>1</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -258,7 +258,7 @@
                         <latitud>-6.1419</latitud>
                         <altitud>104</altitud>
                     </coordenadas>
-                    <distancia_desde_anterior unidades="m">1600</distancia_desde_anterior>
+                  <distancia_desde_anterior unidades="m">1600</distancia_desde_anterior>
                     <tiempo_desde_anterior>1</tiempo_desde_anterior>
                     <galeria>
                         <fotos>

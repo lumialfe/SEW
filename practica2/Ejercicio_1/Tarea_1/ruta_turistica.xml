@@ -2,10 +2,9 @@
 <!DOCTYPE ruta_turistica SYSTEM "ruta_turistica.dtd">
     <rutas>
         <ruta nombre = "Mirando al Mar" tipo ="Ruta a Caballo">
-            <dificultad>Accesible para todos</dificultad>
-            <fecha tipo="inicio"></fecha>
-            <hora tipo="inicio"></hora>
-            <duración>1</duración>
+            <dificultad>Facil</dificultad>
+            <fecha>2021-06-06</fecha>
+            <duración>PT1H</duración>
             <agencia>Yumping.com</agencia>
             <descripcion>Es una ruta de contacto con la naturaleza, disfrutando de los incomparables paisajes asturianos de mar y montaña.</descripcion>
             <restricciones>
@@ -32,6 +31,7 @@
                         <latitud>-6.21184</latitud>
                         <altitud>116</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
                     <tiempo_desde_anterior>0</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -49,6 +49,7 @@
                         <latitud>-6.21</latitud>
                         <altitud>118</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">800</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -66,6 +67,7 @@
                         <latitud>-6.1131</latitud>
                         <altitud>0</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">2200</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -89,11 +91,8 @@
         </ruta>
 
         <ruta nombre = "Ruta a Caballo en Arriondas" tipo ="Ruta a Caballo">
-            <dificultad>Accesible para todos</dificultad>
-            <fecha tipo="inicio"></fecha>
-            <hora tipo="inicio"></hora>
-            <duración>1</duración>
-            <duración>2</duración>
+            <dificultad>Facil</dificultad>
+            <duración>PT2H</duración>
             <agencia>aventurasenasturias.com</agencia>
             <descripcion>Estas rutas recorren bosques y montañas con impresionantes vistas de la Cordillera del Sueve y de los Picos de Europa.</descripcion>
             <restricciones>
@@ -121,6 +120,7 @@
                         <latitud>-5.1110</latitud>
                         <altitud>36</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
                     <tiempo_desde_anterior>0</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -138,6 +138,7 @@
                         <latitud>-5.1023</latitud>
                         <altitud>85</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">600</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.2</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -155,6 +156,7 @@
                         <latitud>-4.4917</latitud>
                         <altitud>2500</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">2800</distancia_desde_anterior>
                     <tiempo_desde_anterior>0.8</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -181,10 +183,9 @@
         </ruta>
 
         <ruta nombre = "Caballos en Cudillero" tipo ="Ruta a Caballo">
-            <dificultad>Accesible para todos</dificultad>
-            <fecha tipo="inicio"></fecha>
-            <hora tipo="inicio"></hora>
-            <duración>2</duración>
+            <dificultad>Media</dificultad>
+            <hora>17:00:00</hora>
+            <duración>PT2H</duración>
             <agencia>aventurasenasturias.com</agencia>
             <descripcion>Estas rutas se realizan en el entorno de Cudillero, en la zona central de Asturias cerca de Avilés, Gijón y de Oviedo.</descripcion>
             <restricciones>
@@ -212,6 +213,7 @@
                         <latitud>-6.1235</latitud>
                         <altitud>126</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
                     <tiempo_desde_anterior>0</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -229,6 +231,7 @@
                         <latitud>-6.1312</latitud>
                         <altitud>4</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">1800</distancia_desde_anterior>
                     <tiempo_desde_anterior>1</tiempo_desde_anterior>
                     <galeria>
                         <fotos>
@@ -255,6 +258,7 @@
                         <latitud>-6.1419</latitud>
                         <altitud>104</altitud>
                     </coordenadas>
+                    <distancia_desde_anterior unidades="m">1600</distancia_desde_anterior>
                     <tiempo_desde_anterior>1</tiempo_desde_anterior>
                     <galeria>
                         <fotos>

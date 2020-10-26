@@ -67,10 +67,14 @@
 <!ATTLIST referencia
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT hito (descripcion,coordenadas,tiempo_desde_anterior,galeria)>
+<!ELEMENT hito (descripcion,coordenadas,distancia_desde_anterior, tiempo_desde_anterior,galeria)>
 <!ATTLIST hito
   xmlns CDATA #FIXED ''
   nombre CDATA #REQUIRED>
+
+<!ELEMENT distancia_desde_anterior (#PCDATA)>
+<!ATTLIST distancia_desde_anterior
+  xmlns CDATA #FIXED ''>
 
 <!ELEMENT tiempo_desde_anterior (#PCDATA)>
 <!ATTLIST tiempo_desde_anterior

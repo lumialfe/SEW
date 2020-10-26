@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns="http://tempuri.org/ruta_turistica" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ruta_turistica" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="rutas">
     <xs:complexType>
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
@@ -11,9 +11,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="dificultad" />
-        <xs:element ref="fecha" minOccurs="0"/>
-        <xs:element ref="hora" minOccurs="0"/>
-        <xs:element ref="duración"/>
+        <xs:element ref="fecha" />
+        <xs:element ref="hora" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="duración" />
         <xs:element ref="agencia" />
         <xs:element ref="descripcion" />
         <xs:element ref="restricciones" />
@@ -29,32 +29,26 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="dificultad">
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Dificil"/>
-        <xs:enumeration value="Media"/>
-        <xs:enumeration value="Facil"/>
-      </xs:restriction>
-    </xs:simpleType>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string" />
+      </xs:simpleContent>
+    </xs:complexType>
   </xs:element>
   <xs:element name="fecha">
     <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:date"/>
-      </xs:simpleContent>
+      <xs:attribute name="tipo" type="xs:NMTOKEN" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:element name="hora">
     <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:time"/>
-      </xs:simpleContent>
+      <xs:attribute name="tipo" type="xs:NMTOKEN" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:element name="duración">
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base="xs:duration" />
+        <xs:extension base="xs:string" />
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
@@ -88,22 +82,21 @@
   </xs:element>
   <xs:element name="referencias">
     <xs:complexType>
-      <xs:sequence minOccurs="3" maxOccurs="unbounded">
-        <xs:element ref="referencia"/>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="referencia" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="valoracion">
-    <xs:simpleType>
-      <xs:restriction base="xs:integer">
-        <xs:minInclusive value="0"/>
-        <xs:maxInclusive value="10"/>
-      </xs:restriction>
-    </xs:simpleType>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string" />
+      </xs:simpleContent>
+    </xs:complexType>
   </xs:element>
   <xs:element name="hitos">
     <xs:complexType>
-      <xs:sequence minOccurs="3" maxOccurs="unbounded">
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
         <xs:element ref="hito" />
       </xs:sequence>
     </xs:complexType>
@@ -129,49 +122,37 @@
       <xs:sequence>
         <xs:element ref="descripcion" />
         <xs:element ref="coordenadas" />
-        <xs:element ref="distancia_desde_anterior"/>
-        <xs:element ref="tiempo_desde_anterior" minOccurs="0"/>
+        <xs:element ref="tiempo_desde_anterior" />
         <xs:element ref="galeria" />
       </xs:sequence>
       <xs:attribute name="nombre" type="xs:string" use="required" />
     </xs:complexType>
   </xs:element>
-
-  <xs:element name="distancia_desde_anterior">
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:integer" />
-      </xs:simpleContent>
-      <xs:attribute name="unidades" type="xs:string" use="required"/>
-    </xs:complexType>
-  </xs:element>
-
   <xs:element name="tiempo_desde_anterior">
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base="xs:decimal" />
+        <xs:extension base="xs:string" />
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="galeria">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="1" maxOccurs="5" ref="fotos" />
-        <xs:element minOccurs="0" maxOccurs="3" ref="videos" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="fotos" />
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="videos" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="fotos">
     <xs:complexType>
-      <xs:sequence minOccurs="1" maxOccurs="5">
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
         <xs:element ref="foto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="videos">
     <xs:complexType>
-      <xs:sequence minOccurs="0" maxOccurs="3">
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
         <xs:element ref="video" />
       </xs:sequence>
     </xs:complexType>
@@ -209,21 +190,21 @@
   <xs:element name="longitud">
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base="xs:decimal" />
+        <xs:extension base="xs:string" />
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   <xs:element name="latitud">
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base="xs:decimal" />
+        <xs:extension base="xs:string" />
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   <xs:element name="altitud">
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base="xs:integer" />
+        <xs:extension base="xs:string" />
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE rutas SYSTEM "rutas.dtd">
     <rutas>
         <ruta nombre = "Mirando al Mar" tipo ="Ruta a Caballo">
             <dificultad>Facil</dificultad>
             <fecha>2021-06-06</fecha>
-            <duración>PT1H</duración>
+            <duracion>PT1H</duracion>
             <agencia>Yumping.com</agencia>
             <descripcion>Es una ruta de contacto con la naturaleza, disfrutando de los incomparables paisajes asturianos de mar y montaña.</descripcion>
             <restricciones>
@@ -92,7 +92,7 @@
 
         <ruta nombre = "Ruta a Caballo en Arriondas" tipo ="Ruta a Caballo">
             <dificultad>Facil</dificultad>
-            <duración>PT2H</duración>
+            <duracion>PT2H</duracion>
             <agencia>aventurasenasturias.com</agencia>
             <descripcion>Estas rutas recorren bosques y montañas con impresionantes vistas de la Cordillera del Sueve y de los Picos de Europa.</descripcion>
             <restricciones>
@@ -125,7 +125,7 @@
                     <galeria>
                         <fotos>
                             <foto>
-                                https://lh3.googleusercontent.com/proxy/pzCWwpvxnEdBdXHdR-n7n9tHAdt__4UF374BZYMfMXR2089NWQUCE2059WTFWmIh9Oz2rPMa-MIQJYfL8xmDVyIKosdAHn_yqRx2-64M5QZypVVJ2yVBJkfioEG9HxpOub89-w                        
+                                https://jairecanoas.com/blog/wp-content/uploads/2019/11/arriondas-825x510.jpg                            
                             </foto>
                         </fotos>
                     </galeria>
@@ -166,16 +166,11 @@
                                 https://www.turismoasturias.es/documents/11022/4994980/PORTADA-bulnes-Mampiris.jpg/25820526-124c-4430-a2a0-9716a472fa62?t=1588852703233
                             </foto>
                             <foto>
-                                https://i.blogs.es/b922c5/el-parque-nacional-picos-de-europa-cumple-100-anos/1366_2000.jpg                        </foto>
-                            <foto>
-                            </foto>
-                            <foto>
+                                https://i.blogs.es/b922c5/el-parque-nacional-picos-de-europa-cumple-100-anos/1366_2000.jpg                        
                             </foto>
                         </fotos>
                         <videos>
                             <video>https://www.youtube.com/watch?v=FHgKpk1SyAM</video>
-                            <video></video>
-                            <video></video>
                         </videos>
                     </galeria>
                 </hito>
@@ -185,7 +180,7 @@
         <ruta nombre = "Caballos en Cudillero" tipo ="Ruta a Caballo">
             <dificultad>Media</dificultad>
             <hora>17:00:00</hora>
-            <duración>PT2H</duración>
+            <duracion>PT2H</duracion>
             <agencia>aventurasenasturias.com</agencia>
             <descripcion>Estas rutas se realizan en el entorno de Cudillero, en la zona central de Asturias cerca de Avilés, Gijón y de Oviedo.</descripcion>
             <restricciones>
@@ -263,8 +258,7 @@
                     <galeria>
                         <fotos>
                             <foto>
-                               https://lh3.googleusercontent.com/proxy/ujww8OYyJ8z-7lO1bQBKOFOtxHQFcVA2MmDQvO5mKfVUclaf9dfPlLHF6FJA6By4wSG2BmVhymiP6tBYqQSH7TQYN1TR6Up-EjpiDrBU6lC_1fLaw8NTAokTVy0c1PlCWZH9KdGtTLW9zCI                        
-                            </foto>
+                                https://www.lavanguardia.com/r/GODO/LV/p7/WebSite/2020/01/02/Recortada/img_tayala_20200102-123649_imagenes_lv_terceros_ovinana_2-261-kgN-U472670949381XDD-992x558@LaVanguardia-Web.jpg                            </foto>
                             <foto>
                                 https://www.turismoasturias.es/documents/11022/4994980/PORTADA-bulnes-Mampiris.jpg/25820526-124c-4430-a2a0-9716a472fa62?t=1588852703233
                             </foto>

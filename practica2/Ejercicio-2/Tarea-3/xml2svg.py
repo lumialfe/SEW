@@ -46,12 +46,12 @@ def writeXML(archivoXML, outFileName):
     #f.write(footerKML)
     f.close
 
-def fileSeparator(filename):
-    f = open("ruta.txt", "r", encoding='utf-8')
+def fileSeparator(miArchivoTXT, filename):
+    f = open(miArchivoTXT, "r", encoding='utf-8')
     line = f.read(-1)
     lines = line.split("SPLITTOKEN")
     for x in range (len(lines) - 1):
-        outfile = "ruta" + (str)(x) + ".svg"
+        outfile = filename + (str)(x) + ".svg"
         w = open(outfile, "w", encoding='utf-8')
         w.write(kmlBody)
         w.write('<text x="50" y="50" font-family="monospace" font-size="30" style="fill:black">Perfil Altimétrico de la Ruta a Caballo</text>')
@@ -122,11 +122,12 @@ def fileSeparator(filename):
 def main():
     """Prueba de la función verXML()"""
     #print(verXML.__doc__)
-    #miArchivoXML = input('Introduzca un archivo XML = ')
-    #miArchivoHTML = input('Introduzca un archivo HTML = ')
-    miArchivoXML = "rutas.xml"
-    miArchivoKML = "ruta.txt"
-    writeXML(miArchivoXML, miArchivoKML)
-    fileSeparator(miArchivoKML)
+    miArchivoXML = input('Introduzca un archivo XML = ')
+    miArchivoTXT = input('Introduzca un archivo TXT intermedio = ')
+    miArchivoSVG = input('Introduzca un nombre para los archivos SVG = ')
+    #miArchivoXML = "rutas.xml"
+    #miArchivoKML = "ruta.txt"
+    writeXML(miArchivoXML, miArchivoTXT)
+    fileSeparator(miArchivoTXT, miArchivoSVG)
 if __name__ == "__main__":
     main()

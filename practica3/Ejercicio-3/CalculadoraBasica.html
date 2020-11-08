@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora Basica</title>
+<link rel="stylesheet" type="text/css" href="CalculadoraBasica.css"/>
+
+<script type ="text/ecmascript" src="CalculadoraBasica.js"></script>
+
+</head>
+<body>
+<div>
+    <input type="text" name="inputwindow" id="inputwindow" disabled>
+
+    <table>
+        <tr>
+            <td><input type="button" value="mrc" onclick="c.mrc()"/></td>
+            <td><input type="button" value="m-" onclick="c.mMenos()"/></td>
+            <td><input type="button" value="m+" onclick="c.mMas()"/></td>
+            <td><input type="button" value="/" onclick="c.division()"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="c.digitos(7)"/></td>
+            <td><input type="button" value="8" onclick="c.digitos(8)"/></td>
+            <td><input type="button" value="9" onclick="c.digitos(9)"/></td>
+            <td><input type="button" value="*" onclick="c.multiplicacion()"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="c.digitos(4)"/></td>
+            <td><input type="button" value="5" onclick="c.digitos(5)"/></td>
+            <td><input type="button" value="6" onclick="c.digitos(6)"/></td>
+            <td><input type="button" value="-" onclick="c.resta()"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="c.digitos(1)"/></td>
+            <td><input type="button" value="2" onclick="c.digitos(2)"/></td>
+            <td><input type="button" value="3" onclick="c.digitos(3)"/></td>
+            <td><input type="button" value="+" onclick="c.suma()"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="c.digitos(0)"/></td>
+            <td><input type="button" value="." onclick="c.punto()"/></td>
+            <td><input type="button" value="C" onclick="c.borrar()"/></td>
+            <td><input type="button" value="=" onclick="c.igual()"/></td>
+        </tr>
+    </table>
+</div>
+    <footer>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-3%2FCalculadoraCientifica.html">
+            <img style="border:0;width:50px;height:50px" src="HTML5.png" alt=" HTML5 Válido!"/></a>
+            
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-3%2FCalculadoraCientifica.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img src="CSS3.png" alt="CSS Válido"/></a>
+    </footer>
+
+</body>
+</html>

@@ -171,10 +171,10 @@ def writeXML(archivoXML, outFileName):
 def main():
     """Prueba de la función verXML()"""
     #print(verXML.__doc__)
-    #miArchivoXML = input('Introduzca un archivo XML = ')
-    #miArchivoHTML = input('Introduzca un archivo HTML = ')
-    miArchivoXML = "rutas.xml"
-    miArchivoHTML = "index.html"
+    miArchivoXML = input('Introduzca un archivo XML = ')
+    miArchivoHTML = input('Introduzca un archivo HTML = ')
+    #miArchivoXML = "rutas.xml"
+    #miArchivoHTML = "index.html"
     writeXML(miArchivoXML, miArchivoHTML)
 if __name__ == "__main__":
     main()

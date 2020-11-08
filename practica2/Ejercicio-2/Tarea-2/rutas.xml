@@ -190,8 +190,8 @@
             <inicio>Cudillero</inicio>
             <direccion_inicio>Hípica de Cudillero</direccion_inicio>
             <coordenadas>
-                <latitud>-6.1235</latitud>
-                <longitud>43.3357</longitud>
+                <latitud>-6.0854</latitud>
+                <longitud>43.3336</longitud>
                 <altitud>126</altitud>
             </coordenadas>
             <referencias>
@@ -204,8 +204,8 @@
                 <hito nombre="Cudillero">
                     <descripcion>Inicio de Ruta</descripcion>
                     <coordenadas>
-                        <latitud>-6.1235</latitud>
-                        <longitud>43.3357</longitud>
+                        <latitud>-6.0854</latitud>
+                        <longitud>43.3336</longitud>
                         <altitud>126</altitud>
                     </coordenadas>
                   <distancia_desde_anterior unidades="m">0</distancia_desde_anterior>
@@ -222,7 +222,7 @@
                 <hito nombre="Area Recreativa de San Pedro de la Rivera">
                     <descripcion>Punto de interés</descripcion>
                     <coordenadas>
-                        <latitud>-6.1312</latitud>
+                        <latitud>-6.1317</latitud>
                         <longitud>43.3438</longitud>
                         <altitud>4</altitud>
                     </coordenadas>

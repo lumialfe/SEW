@@ -64,6 +64,8 @@ input[type=button] {
     margin: 0%;
     margin-bottom: 1%;
     border: 0px;
+    border-radius: 5%;
+    box-shadow: 0px 1px gray;
 }
 
 input[value="="] {
@@ -100,4 +102,5 @@ div {
     background-color: white;
     height: fit-content;
     max-width: 40%;
+    border-radius: 2%;
 }

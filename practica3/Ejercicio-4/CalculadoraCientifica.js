@@ -48,9 +48,10 @@ class CalculadoraBasica {
     igual() {
         try {
             var toEval = document.getElementById('inputwindow').value;
-            document.getElementById('inputwindow').value = eval(toEval);
+            toEval = eval(toEval);
+            document.getElementById('inputwindow').value = toEval;
         } catch (err) {
-            document.getElementById('inputwindow').value = "Error.";
+            document.getElementById('inputwindow').value = "Error: " + err;
         }
         
     }
@@ -71,7 +72,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
 
     pi() {
-        document.getElementById('inputwindow').value += "Math.pi";
+        document.getElementById('inputwindow').value += "Math.PI";
     }
 
     sin() {
@@ -103,7 +104,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     
     log() {
-        document.getElementById('inputwindow').value += "Math.log(";
+        document.getElementById('inputwindow').value += "Math.log10(";
     }
 
     exp() {
@@ -116,9 +117,32 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     borrarUltimo() {
         var aux = document.getElementById('inputwindow').value;
-        for (i = 0; i < length(aux) - 1; i++) {
-            document.getElementById('inputwindow').value += aux[i];
-        }
+        document.getElementById('inputwindow').value = aux.slice(0, -1);
+    }
+
+    e() {
+        document.getElementById('inputwindow').value += "Math.E";
+    }
+
+    ln() {
+        document.getElementById('inputwindow').value += "Math.log(";
+    }
+
+    fact() {
+            var aux;
+            try {
+                aux = eval(document.getElementById('inputwindow').value);
+                var total = 1; 
+            
+                for (var i = 1; i <= aux; i++) {
+                    total = total * i; 
+                } 
+                
+                document.getElementById('inputwindow').value = total;
+            }
+            catch (err) {
+                document.getElementById('inputwindow').value = "Error: " + err;
+            }    
     }
 }
 

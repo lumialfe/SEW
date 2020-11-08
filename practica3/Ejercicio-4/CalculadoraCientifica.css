@@ -53,16 +53,25 @@ footer > a > img {
     margin-right: 2%;
 }
 
-td input {
-    min-height: 50px;
-    min-width: 90px;
-    width: auto;
+input[type=button] {
+    width: 19%;
+    min-width: fit-content;
     height: auto;
     text-align: center;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;
+    margin: 0%;
+    margin-bottom: 1%;
+    border: 0px;
+}
+
+input[value="="] {
+    background-color: rgb(200, 160, 75);
+}
+
+input[value="0"], input[value="1"], input[value="2"], input[value="3"], input[value="4"], input[value="5"], input[value="6"], input[value="7"], input[value="8"], input[value="9"]{
+    background-color: white;
     border: 2px solid lightgray;
 }
 
@@ -75,21 +84,20 @@ input {
     background-color: white;
     font-family: monospace;
     color: black;
-    padding-right: 5px;
+    padding-right: 3%;
     height: auto;
-    width: auto;
-    width: 94%;
+    width: 95%;
     min-height: 50px;
     text-align: right;
-    margin-left: auto;
-    margin-bottom: 5px;
+    margin: auto;
+    margin-bottom: 2%;
 }
 
 div {
+    display: inline-block;
     margin: auto;
     padding: 1%;
-    background-color: lightgray;
-    border: 2px solid lightgray;
+    background-color: white;
     height: fit-content;
-    width: fit-content;
+    max-width: 40%;
 }

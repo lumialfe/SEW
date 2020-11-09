@@ -2,41 +2,17 @@ body {
     width: 90%;
     margin: 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(21, 43, 26);
+    background-color: lightgrey;
     text-align: center;
 }
 
 h1 {
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: rgb(200, 160, 75);
-    margin: 5%;
-}
-
-h2 {
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(200, 160, 75);}
-
-h3 {
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(200, 160, 75);}
-
-h4 {
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(200, 160, 75);
-    margin-bottom: 5%;
-}
-
-p {
-    font-size: medium;
-    color: wheat;
-}
-
-p b {
-    color: rgb(200, 160, 75);
+    font-size: 75%;
+    margin-bottom: 3%;
+    margin-left: 2%;
 }
 
 footer {
@@ -68,17 +44,31 @@ input[type=button] {
     box-shadow: 0px 1px gray;
 }
 
-input {
+input[value="="] {
+    background-color: rgb(200, 160, 75);
+}
+
+input[value="0"], input[value="1"], input[value="2"], input[value="3"], input[value="4"], input[value="5"], input[value="6"], input[value="7"], input[value="8"], input[value="9"]{
+    background-color: white;
+    border: 2px solid lightgray;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+div input {
     background-color: white;
     font-family: monospace;
     color: black;
     padding-right: 3%;
     height: auto;
-    width: 80%;
-    min-height: 35px;
+    width: 95%;
+    min-height: 50px;
     text-align: right;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 div {
@@ -87,6 +77,6 @@ div {
     padding: 1%;
     background-color: white;
     height: fit-content;
-    max-width: 20%;
+    max-width: 40%;
     border-radius: 2%;
 }

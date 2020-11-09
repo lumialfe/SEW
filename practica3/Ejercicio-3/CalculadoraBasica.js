@@ -34,7 +34,7 @@ class CalculadoraBasica {
     }
 
     mMenos() {
-        this.memory -= document.getElementById('inputwindow').value;
+        this.memory = "";
     }
 
     mMas() {

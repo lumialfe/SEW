@@ -37,7 +37,7 @@ input[type=button] {
     padding: 0;
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0%;
+    margin: .5%;
     margin-bottom: 1%;
     border: 0px;
     border-radius: 5%;
@@ -46,6 +46,18 @@ input[type=button] {
 
 input[value="="] {
     background-color: rgb(200, 160, 75);
+}
+
+input[value="C"] {
+    background-color: #ff7777;
+}
+
+input[value="SHIFT"] {
+    background-color: #5368df;
+}
+
+input[value="LIGHT"] {
+    background-color: #f2ffa1;
 }
 
 input[value="0"], input[value="1"], input[value="2"], input[value="3"], input[value="4"], input[value="5"], input[value="6"], input[value="7"], input[value="8"], input[value="9"]{
@@ -79,4 +91,12 @@ div {
     height: fit-content;
     max-width: 40%;
     border-radius: 2%;
+}
+
+div div {
+    min-width: 100%;
+    display: table;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    justify-content: center;
 }

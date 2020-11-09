@@ -3,30 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Calculadora 100tífica</title>
-<link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css"/>
+<link rel="stylesheet" type="text/css" href="CalculadoraRPN.css"/>
 
-<script type ="text/ecmascript" src="CalculadoraCientifica.js"></script>
+<script type ="text/ecmascript" src="CalculadoraRPN.js"></script>
 
 </head>
 <body>
 <div>
-    <h1>ASTURIAS INSTRUMENTS: AI-1.0</h1>
-    <input type="text" name="inputwindow" id="inputwindow" disabled>
-
-    <div>
-
-
-            <input type="button" value="SHIFT" onclick="c.shift()"/>
-            <input type="button" value="MR" onclick="c.mrc()"/>
-            <input type="button" value="M+" onclick="c.mMas()"/>
-            <input type="button" value="MC" onclick="c.mMenos()"/>
-            <input type="button" value="LIGHT" onclick="c.backlight()"/>
+    <h1>ASTURIAS INSTRUMENTS: RPN-1.0</h1>
+        <input type="text" name="inputwindow" id="inputwindow" disabled>
 
             <input type="button" value="x^2" onclick="c.pow2()"/>
             <input type="button" value="x^y" onclick="c.pow()"/>
-            <input id = "sin" type="button" value="sin" onclick="c.sin()"/>
-            <input id = "cos" type="button" value="cos" onclick="c.cos()"/>
-            <input id = "tan" type="button" value="tan" onclick="c.tan()"/>
+            <input type="button" value="sin" onclick="c.sin()"/>
+            <input type="button" value="cos" onclick="c.cos()"/>
+            <input type="button" value="tan" onclick="c.tan()"/>
 
             <input type="button" value="√" onclick="c.sqrt()"/>
             <input type="button" value="10^x" onclick="c.baseten()"/>
@@ -52,7 +43,7 @@
             <input type="button" value="6" onclick="c.digitos(6)"/>
             <input type="button" value="-" onclick="c.resta()"/>
 
-            <input type="button" value="Ans" onclick="c.prevanswer()"/>
+            <input type="button" value="Ans" onclick="c.ans()"/>
             <input type="button" value="1" onclick="c.digitos(1)"/>
             <input type="button" value="2" onclick="c.digitos(2)"/>
             <input type="button" value="3" onclick="c.digitos(3)"/>
@@ -63,7 +54,7 @@
             <input type="button" value="0" onclick="c.digitos(0)"/>
             <input type="button" value="." onclick="c.punto()"/>
             <input type="button" value="=" onclick="c.igual()"/>
-        </div>
+
 </div>
     <footer>
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-3%2FCalculadoraBasica.html">

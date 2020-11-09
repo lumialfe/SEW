@@ -2,7 +2,6 @@ class CalculadoraBasica {
 
     constructor() {
         this.memory = "";
-        this.ans = "";
     }
 
     digitos(x) {
@@ -35,7 +34,7 @@ class CalculadoraBasica {
     }
 
     mMenos() {
-        this.memory = "";
+        this.memory -= document.getElementById('inputwindow').value;
     }
 
     mMas() {
@@ -50,19 +49,18 @@ class CalculadoraBasica {
         try {
             var toEval = document.getElementById('inputwindow').value;
             toEval = eval(toEval);
-            this.ans = toEval;
             document.getElementById('inputwindow').value = toEval;
         } catch (err) {
-            document.getElementById('inputwindow').value = "SyntaxError";
+            document.getElementById('inputwindow').value = "Error: " + err;
         }
+        
     }
+
 }
 
 class CalculadoraCientifica extends CalculadoraBasica {
     constructor() {
         super();
-        this.isShifted = false;
-        this.lit = true;
     }
 
     open() {
@@ -140,67 +138,11 @@ class CalculadoraCientifica extends CalculadoraBasica {
                     total = total * i; 
                 } 
                 
-                this.ans = total;
                 document.getElementById('inputwindow').value = total;
             }
             catch (err) {
-                document.getElementById('inputwindow').value =  "SyntaxError";
+                document.getElementById('inputwindow').value = "Error: " + err;
             }    
-    }
-
-    shift() {
-        if (!this.isShifted) {
-            document.getElementById('sin').value = "arcsin";
-            document.getElementById('sin').setAttribute("onclick", "c.asin()");
-
-            document.getElementById('cos').value = "arccos";
-            document.getElementById('cos').setAttribute("onclick", "c.acos()");
-
-            document.getElementById('tan').value = "arctan";
-            document.getElementById('tan').setAttribute("onclick", "c.atan()");
-
-            this.isShifted = true;
-        }
-        else if (this.isShifted) {
-            document.getElementById('sin').value = "sin";
-            document.getElementById('sin').setAttribute("onclick", "c.sin()");
-
-            document.getElementById('cos').value = "cos";
-            document.getElementById('cos').setAttribute("onclick", "c.cos()");
-
-            document.getElementById('tan').value = "tan";
-            document.getElementById('tan').setAttribute("onclick", "c.tan()");
-            this.isShifted = false;
-        }
-    }
-
-    asin() {
-        document.getElementById('inputwindow').value += "Math.asin(";
-    }
-
-    acos() {
-        document.getElementById('inputwindow').value += "Math.acos(";
-    }
-
-    atan() {
-        document.getElementById('inputwindow').value += "Math.atan(";
-    }
-
-    backlight() {
-        if (this.lit) {
-            document.getElementById('inputwindow').style.backgroundColor="#013220";
-            document.getElementById('inputwindow').style.color="#00ff00";
-            this.lit = false;
-        }
-        else {
-            document.getElementById('inputwindow').style.backgroundColor="#ffffff";
-            document.getElementById('inputwindow').style.color="#000000";
-            this.lit = true;
-        }
-    }
-
-    prevanswer() {
-        document.getElementById('inputwindow').value += this.ans;
     }
 }
 

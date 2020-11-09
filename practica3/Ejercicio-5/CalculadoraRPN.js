@@ -1,149 +1,249 @@
-class CalculadoraBasica {
-
+class LIFOStack {
     constructor() {
-        this.memory = "";
+        this.stack = new Array();
     }
 
-    digitos(x) {
-        document.getElementById('inputwindow').value += x;
-        this.digitos = digitos; 
+    push(value) {
+        this.stack.push(value);
     }
 
-    punto() {
-        document.getElementById('inputwindow').value += ".";
+    pop() {
+        return this.stack.pop();
+    }
+}
+
+class CalculadoraRPN {
+    constructor() {
+        this.stack = new LIFOStack();
     }
 
-    suma() {
-        document.getElementById('inputwindow').value += "+";
+    push(value) {
+        this.stack.push(value);
     }
 
-    resta() {
-        document.getElementById('inputwindow').value += "-";
+    pop() {
+        return this.stack.pop();
     }
 
-    multiplicacion() {
-        document.getElementById('inputwindow').value += "*";
+    addition() {
+        if (this.stack.stack.length >= 2) {
+            var aux1 = parseFloat(this.stack.pop());
+            var aux2 = parseFloat(this.stack.pop());
+            this.push(aux1 + aux2);
+            this.updateStack();
+        }
+    }
+
+    substraction() {
+        if (this.stack.stack.length >= 2) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(parseFloat(this.stack.pop()) - aux);
+            this.updateStack();
+        }
     }
 
     division() {
-        document.getElementById('inputwindow').value += "/";
-    }
-
-    mrc() {
-        document.getElementById('inputwindow').value += this.memory;
-    }
-
-    mMenos() {
-        this.memory -= document.getElementById('inputwindow').value;
-    }
-
-    mMas() {
-        this.memory += document.getElementById('inputwindow').value;
-    }
-
-    borrar() {
-        document.getElementById('inputwindow').value = "";
-    }
-
-    igual() {
-        try {
-            var toEval = document.getElementById('inputwindow').value;
-            toEval = eval(toEval);
-            document.getElementById('inputwindow').value = toEval;
-        } catch (err) {
-            document.getElementById('inputwindow').value = "Error: " + err;
+        if (this.stack.stack.length >= 2) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(parseFloat(this.stack.pop()) / aux);
+            this.updateStack();
         }
-        
     }
 
-}
-
-class CalculadoraCientifica extends CalculadoraBasica {
-    constructor() {
-        super();
+    multiplication() {
+        if (this.stack.stack.length >= 2) {
+            this.push(parseFloat(this.stack.pop()) * parseFloat(this.stack.pop()));
+            this.updateStack();
+        }
     }
 
-    open() {
-        document.getElementById('inputwindow').value += "(";
-    }
-
-    close() {
-        document.getElementById('inputwindow').value += ")";
-    }
-
-    pi() {
-        document.getElementById('inputwindow').value += "Math.PI";
+    power() {
+        if (this.stack.stack.length >= 2) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(parseFloat(this.stack.pop()) ** aux);
+            this.updateStack();
+        }
     }
 
     sin() {
-        document.getElementById('inputwindow').value += "Math.sin(";
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.sin(aux));
+            this.updateStack();
+        }
     }
 
     cos() {
-        document.getElementById('inputwindow').value += "Math.cos(";
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.cos(aux));
+            this.updateStack();
+        }
     }
 
     tan() {
-        document.getElementById('inputwindow').value += "Math.tan(";
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.tan(aux));
+            this.updateStack();
+        }
     }
 
-    pow() {
-        document.getElementById('inputwindow').value += "**";
+    shift() {
+        if (!this.isShifted) {
+            document.getElementById('sin').value = "sin⁻¹";
+            document.getElementById('sin').setAttribute("onclick", "c.asin()");
+
+            document.getElementById('cos').value = "cos⁻¹";
+            document.getElementById('cos').setAttribute("onclick", "c.acos()");
+
+            document.getElementById('tan').value = "tan⁻¹";
+            document.getElementById('tan').setAttribute("onclick", "c.atan()");
+
+            this.isShifted = true;
+        }
+        else if (this.isShifted) {
+            document.getElementById('sin').value = "sin";
+            document.getElementById('sin').setAttribute("onclick", "c.sin()");
+
+            document.getElementById('cos').value = "cos";
+            document.getElementById('cos').setAttribute("onclick", "c.cos()");
+
+            document.getElementById('tan').value = "tan";
+            document.getElementById('tan').setAttribute("onclick", "c.tan()");
+            this.isShifted = false;
+        }
     }
 
-    pow2() {
-        document.getElementById('inputwindow').value += "**2";
+    asin() {
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.asin(aux));
+            this.updateStack();
+        }
     }
 
-    sqrt() {
-        document.getElementById('inputwindow').value += "Math.sqrt(";
+    acos() {
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.acos(aux));
+            this.updateStack();
+        }
     }
 
-    baseten() {
-        document.getElementById('inputwindow').value += "Math.pow(10, ";
+    atan() {
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.atan(aux));
+            this.updateStack();
+        }
     }
-    
-    log() {
-        document.getElementById('inputwindow').value += "Math.log10(";
+
+    pi() {
+        document.getElementById('inputwindow').value = Math.PI; 
+    }
+
+    factorial() {
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            
+            var total = 1; 
+            
+            for (var i = 1; i <= aux; i++) {
+                total = total * i; 
+            }
+
+            this.push(total);
+            this.updateStack();
+        }   
     }
 
     exp() {
-        document.getElementById('inputwindow').value += "Math.exp(";
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.exp(aux));
+            this.updateStack();
+        }
+    }
+    
+    log() {
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.log10(aux));
+            this.updateStack();
+        }
     }
 
     abs() {
-        document.getElementById('inputwindow').value += "Math.abs(";
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.abs(aux));
+            this.updateStack();
+        }
     }
 
-    borrarUltimo() {
+    baseten() {
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(10**(aux));
+            this.updateStack();
+        }
+    }
+
+    sqrt() {
+        if (this.stack.stack.length >= 1) {
+            var aux = parseFloat(this.stack.pop());
+            this.push(Math.sqrt(aux));
+            this.updateStack();
+        }
+    }
+
+    enter() {
+        if (document.getElementById('inputwindow').value != "") {
+            this.push(document.getElementById('inputwindow').value);
+            document.getElementById('inputwindow').value = "";
+            this.updateStack();
+        }
+    }
+
+    digit(n) {
+        document.getElementById('inputwindow').value += n;
+    }
+
+    dot() {
+        document.getElementById('inputwindow').value += "."; 
+    }
+
+    delete() {
+        document.getElementById('inputwindow').value = ""; 
+    }
+    
+    deleteLast() {
         var aux = document.getElementById('inputwindow').value;
         document.getElementById('inputwindow').value = aux.slice(0, -1);
     }
 
-    e() {
-        document.getElementById('inputwindow').value += "Math.E";
+    clearStack() {
+        this.stack = new LIFOStack();
+        this.updateStack();
     }
 
-    ln() {
-        document.getElementById('inputwindow').value += "Math.log(";
-    }
+    updateStack() {
+        var aux = document.getElementById('stack');
+        while(aux.firstChild) {
+            document.getElementById('stack').removeChild(document.getElementById('stack').lastChild);
+        }
 
-    fact() {
-            var aux;
-            try {
-                aux = eval(document.getElementById('inputwindow').value);
-                var total = 1; 
-            
-                for (var i = 1; i <= aux; i++) {
-                    total = total * i; 
-                } 
-                
-                document.getElementById('inputwindow').value = total;
-            }
-            catch (err) {
-                document.getElementById('inputwindow').value = "Error: " + err;
-            }    
+        for (var i = 0; i < this.stack.stack.length; i++) {
+            var node = document.createElement("p");
+            node.textContent = this.stack.stack[i] + "  ";
+            document.getElementById('stack').append(node);
+            var node = document.createElement("hr");
+            document.getElementById('stack').append(node);
+        }
+
+        console.log(document.getElementById('stack').childNodes);
     }
 }
 
-var c = new CalculadoraCientifica();
+var c = new CalculadoraRPN();

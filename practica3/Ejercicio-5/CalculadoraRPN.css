@@ -30,22 +30,30 @@ footer > a > img {
 }
 
 input[type=button] {
-    width: 19%;
+    width: 15%;
     min-width: fit-content;
     height: auto;
     text-align: center;
     padding: 0;
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0%;
+    margin: .5%;
     margin-bottom: 1%;
     border: 0px;
     border-radius: 5%;
     box-shadow: 0px 1px gray;
 }
 
-input[value="="] {
+input[value="ENTER"] {
     background-color: rgb(200, 160, 75);
+}
+
+input[value="C"], input[value="CS"], input[value="←"] {
+    background-color: #ff7777;
+}
+
+input[value="SHIFT"] {
+    background-color: #5368df;
 }
 
 input[value="0"], input[value="1"], input[value="2"], input[value="3"], input[value="4"], input[value="5"], input[value="6"], input[value="7"], input[value="8"], input[value="9"]{
@@ -53,19 +61,29 @@ input[value="0"], input[value="1"], input[value="2"], input[value="3"], input[va
     border: 2px solid lightgray;
 }
 
+input[id = "empty"] {
+    /* visibility: hidden; */
+    width: 62.5%;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    color: rgb(138, 94, 0);
+}
+
 table {
     margin: auto;
     text-align: center;
 }
 
-div input {
+input {
     background-color: white;
     font-family: monospace;
     color: black;
     padding-right: 3%;
     height: auto;
-    width: 95%;
-    min-height: 50px;
+    width: 90%;
+    min-height: 30px;
     text-align: right;
     margin: auto;
     margin-bottom: 2%;
@@ -79,4 +97,39 @@ div {
     height: fit-content;
     max-width: 40%;
     border-radius: 2%;
+}
+
+div[id="but"] {
+    min-width: 100%;
+    display: table;
+    justify-content: center;
+}
+
+div[id="stack"] {
+    font-size: 70%;
+    text-align: right;
+    min-width: 92%;
+    max-width: 92%;
+    width: 92%;
+    height: 187px;
+    margin-bottom: 3%;
+    background-color: white;
+    vertical-align: bottom;
+    border: 2px solid rgb(200, 160, 75);
+    margin: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    overflow-y: scroll; 
+    overflow-x:auto; 
+}
+
+hr {
+    width: 100%;
+    margin: 0px;
+    color: gray;
+}
+
+div p {
+    margin-right: 5%;
+    max-height: 40px;
 }

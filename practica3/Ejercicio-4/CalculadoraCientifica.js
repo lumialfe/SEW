@@ -150,13 +150,13 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     shift() {
         if (!this.isShifted) {
-            document.getElementById('sin').value = "arcsin";
+            document.getElementById('sin').value = "sin⁻¹";
             document.getElementById('sin').setAttribute("onclick", "c.asin()");
 
-            document.getElementById('cos').value = "arccos";
+            document.getElementById('cos').value = "cos⁻¹";
             document.getElementById('cos').setAttribute("onclick", "c.acos()");
 
-            document.getElementById('tan').value = "arctan";
+            document.getElementById('tan').value = "tan⁻¹";
             document.getElementById('tan').setAttribute("onclick", "c.atan()");
 
             this.isShifted = true;

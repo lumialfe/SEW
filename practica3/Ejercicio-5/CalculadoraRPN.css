@@ -133,3 +133,11 @@ div p {
     margin-right: 5%;
     max-height: 40px;
 }
+
+label {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(200, 160, 75);
+    margin-bottom: 5%;
+    font-size: small;
+}

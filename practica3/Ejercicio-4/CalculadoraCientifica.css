@@ -100,3 +100,11 @@ div div {
     grid-template-rows: auto auto auto auto auto auto;
     justify-content: center;
 }
+
+label {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(200, 160, 75);
+    margin-bottom: 5%;
+    font-size: small;
+}

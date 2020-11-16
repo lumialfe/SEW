@@ -8,9 +8,11 @@ body {
 
 h1 {
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: rgb(200, 160, 75);
-    margin: 5%;
+    font-size: 75%;
+    margin-bottom: 3%;
+    margin-left: 2%;
 }
 
 h2 {

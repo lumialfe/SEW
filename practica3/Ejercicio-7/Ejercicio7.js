@@ -68,11 +68,9 @@ class Operator {
 
     calculateTotal() {
         var total = 0;
-        $("*", document.body).each(function () {
-            if ($(this).get(0).id == "poptd") {
-                var aux = (($(this).get(0).childNodes[0].data).replace(",", "").replace(",", "").replace(",", ""));          
+        $("tbody tr td.poptd").each(function () {
+                var aux = (($(this).get(0).childNodes[0].data).replace(",", "").replace(",", "").replace(",", ""));       
                 total += parseInt(aux);
-            }
         });
         $("#totalpop").val(total);
     }

@@ -98,3 +98,16 @@ label {
     float: left;
     margin: 1%;
 }
+
+div[id="inspectElement"] {
+    text-align: left;
+    font-size: small;
+}
+
+input[id="inspect"], input[id="hideInspect"] {
+    margin-top: 2%;
+    font-size: small;
+    height: fit-content;
+    width: fit-content;
+    background-color: #beb9ff;
+}

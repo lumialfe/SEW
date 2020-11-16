@@ -26,9 +26,9 @@
 
     <input type="button" id="show" value="Show Data" onclick="o.show()"/>
     <input type="button" id="hide" value="Hide Data" onclick="o.hide()"/>
-    <label for="text-filter"></label>
+    <label for="text-filter">Filter:</label>
     <input type="text" id="text-filter" value="" lang="en" />
-    <input type="button" id="button-filter" value="Filter By Country Name" onclick="o.filter()"/>
+    <input type="button" id="button-filter" value="Filter Data" onclick="o.filter()"/>
 
     <table>
         <thead>
@@ -51,7 +51,7 @@
             <tr>
                 <td>1</td>
                 <td>China</td>
-                <td>1,439,323,776</td>
+                <td id="poptd">1,439,323,776</td>
                 <td>0.39 %</td>
                 <td>5,540,090</td>
                 <td>153</td>
@@ -65,7 +65,7 @@
             <tr>
                 <td>2</td>
                 <td>India</td>
-                <td>1,380,004,385</td>
+                <td id="poptd">1,380,004,385</td>
                 <td>0.99 %</td>
                 <td>13,586,631</td>
                 <td>464</td>
@@ -79,7 +79,7 @@
             <tr>
                 <td>3</td>
                 <td>United States</td>
-                <td>331,002,651</td>
+                <td id="poptd">331,002,651</td>
                 <td>0.59 %</td>
                 <td>1,937,734</td>
                 <td>36</td>
@@ -93,7 +93,7 @@
             <tr>
                 <td>4</td>
                 <td>Indonesia</td>
-                <td>273,523,615</td>
+                <td id="poptd">273,523,615</td>
                 <td>1.07 %</td>
                 <td>2,898,047</td>
                 <td>151</td>
@@ -107,7 +107,7 @@
             <tr>
                 <td>5</td>
                 <td>Pakistan</td>
-                <td>220,892,340</td>
+                <td id="poptd">220,892,340</td>
                 <td>2.00 %</td>
                 <td>4,327,022</td>
                 <td>287</td>
@@ -121,7 +121,7 @@
             <tr>
                 <td>6</td>
                 <td>Brazil</td>
-                <td>212,559,417</td>
+                <td id="poptd">212,559,417</td>
                 <td>0.72 %</td>
                 <td>1,509,890</td>
                 <td>25</td>
@@ -135,7 +135,7 @@
             <tr>
                 <td>7</td>
                 <td>Nigeria</td>
-                <td>206,139,589</td>
+                <td id="poptd">206,139,589</td>
                 <td>2.58 %</td>
                 <td>5,175,990</td>
                 <td>226</td>
@@ -149,7 +149,7 @@
             <tr>
                 <td>8</td>
                 <td>Bangladesh</td>
-                <td>164,689,383</td>
+                <td id="poptd">164,689,383</td>
                 <td>1.01 %</td>
                 <td>1,643,222</td>
                 <td>1,265</td>
@@ -163,7 +163,7 @@
             <tr>
                 <td>9</td>
                 <td>Russia</td>
-                <td>145,934,462</td>
+                <td id="poptd">145,934,462</td>
                 <td>0.04 %</td>
                 <td>62,206</td>
                 <td>9</td>
@@ -177,7 +177,7 @@
             <tr>
                 <td>10</td>
                 <td>Mexico</td>
-                <td>128,932,753</td>
+                <td id="poptd">128,932,753</td>
                 <td>1.06 %</td>
                 <td>1,357,224</td>
                 <td>66</td>
@@ -190,6 +190,11 @@
             </tr>
         </tbody>
     </table>
+
+    <h3>Caculate total TOP 10:</h3>
+    <label for="totalpop">Total Population:</label>
+    <input type="text" id="totalpop" value="" lang="en" disabled/>
+    <input type="button" id="calcTotalPop" value="Calculate" onclick="o.calculateTotal()"/>
 
     <br>
     <h3>Comment Section</h3>
@@ -219,6 +224,10 @@
             href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-7%2FEjercicio7.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
             <img src="CSS3.png" alt="CSS Válido" /></a>
     </footer>
+
+    <div id="inspectElement"></div>
+
+    <input type="button" id="inspect" value="Inspect Page" onclick="o.inspectElement()"/>
 
 </body>
 

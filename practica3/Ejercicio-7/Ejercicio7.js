@@ -60,9 +60,10 @@ class Operator {
             $("#inspectElement").prepend("<br>")
         });
         $("#inspectElement").append('<br>');
-        $("#inspectElement").append('<input type="button" id="hideInspect" value="Hide"/>');
+        $("#inspectElement").append('<input type="button" id="hideInspect" value="Remove"/>');
         $("#hideInspect").click(function () {
         $("#inspectElement").remove();
+        $("#inspect").remove();
         })
     }
 

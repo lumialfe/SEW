@@ -24,7 +24,7 @@ h2 {
 h3 {
     text-transform: uppercase;
     text-align: left;
-    color:#08192e;
+    color: #08192e;
 }
 
 h4 {
@@ -51,7 +51,7 @@ footer {
     text-align: left;
 }
 
-footer > a > img {
+footer>a>img {
     height: 50px;
     width: 50px;
     margin-right: 2%;
@@ -66,10 +66,10 @@ table {
 }
 
 td, th {
-   min-width: fit-content;
-   border: 1px solid black;
-   padding-top: .5%;
-   padding-bottom: .5%;
+    min-width: fit-content;
+    border: 1px solid black;
+    padding-top: .5%;
+    padding-bottom: .5%;
 }
 
 th {
@@ -81,3 +81,8 @@ td {
     background-color: white;
 }
 
+input[type="button"] {
+    width: fit-content;
+    margin: 1%;
+    float: left;
+}

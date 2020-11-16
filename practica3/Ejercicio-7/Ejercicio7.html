@@ -6,7 +6,7 @@
     <title>World Population</title>
     <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Ejercicio7.js"></script>
 
 </head>
@@ -24,12 +24,15 @@
     <h2>Data</h2>
     <p>Data based on the latest United Nations Population Division estimates.</p>
 
-    <input type="button" id="show" value="Show Data" />
-    <input type="button" id="hide" value="Hide Data" />
+    <input type="button" id="show" value="Show Data" onclick="o.show()"/>
+    <input type="button" id="hide" value="Hide Data" onclick="o.hide()"/>
+    <label for="text-filter"></label>
+    <input type="text" id="text-filter" value="" lang="en" />
+    <input type="button" id="button-filter" value="Filter By Country Name" onclick="o.filter()"/>
 
     <table>
         <thead>
-            <tr role="row">
+            <tr>
                 <th>#</th>
                 <th>Country</th>
                 <th>Population</th>
@@ -188,6 +191,24 @@
         </tbody>
     </table>
 
+    <br>
+    <h3>Comment Section</h3>
+
+    <ul id="commentSection">
+        <li>
+            <p>Ramon Ramirez: We're all gone die [Mon Nov 16 2020 11:32:07 GMT+0100 (hora estándar de Europa central)]</p>
+        </li>
+    </ul>
+
+    <h4>Add Comment:</h4>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" value="" lang="en" />
+
+    <label for="comment">Comment:</label>
+    <input type="text" id="comment" value="" lang="en" />
+
+    <input type="button" id="addComment" value="Add Comment" onclick="o.addComment()"/>
 
     <footer>
         <a

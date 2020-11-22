@@ -63,6 +63,7 @@ input[type=button] {
     padding: 0;
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
     margin: 30%;
     /* margin-bottom: 1%; */
     border: 0px;

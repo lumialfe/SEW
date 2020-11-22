@@ -1,11 +1,12 @@
 body {
-    width: 90%;
+    width: 95%;
     margin: 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #beb9ff;
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
+    font-size: medium;
 }
 
 h1 {
@@ -36,7 +37,6 @@ h4 {
 }
 
 p {
-    font-size: 100%;
     color: #08192e;
     width: 100%;
     margin: auto;
@@ -101,12 +101,10 @@ label {
 
 div[id="inspectElement"] {
     text-align: left;
-    font-size: 100%;
 }
 
 input[id="inspect"], input[id="hideInspect"] {
     margin-top: 2%;
-    font-size: 100%;
     height: fit-content;
     width: fit-content;
     background-color: #beb9ff;

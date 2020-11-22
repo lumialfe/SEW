@@ -95,7 +95,8 @@ div {
     padding: 1%;
     background-color: white;
     height: fit-content;
-    max-width: 40%;
+    width: 40%;
+    max-width: 80%;
     border-radius: 2%;
 }
 

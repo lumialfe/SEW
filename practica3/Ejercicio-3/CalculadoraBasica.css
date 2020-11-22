@@ -57,9 +57,9 @@ footer > a > img {
 }
 
 input[type=button] {
-    width: 70%;
+    width: 100%;
     min-width: fit-content;
-    height: 60%;
+    height: 70%;
     text-align: center;
     padding: 0;
     background-color: lightgray;
@@ -92,7 +92,7 @@ div {
     padding: 1%;
     background-color: white;
     height: 100%;
-    max-width: 70%;
+    max-width: 50%;
     min-width: fit-content;
     border-radius: 2%;
 }

@@ -1,23 +1,33 @@
 "use strict";
 class DyanamicMap {
     constructor() {
-
+        this.randomLat = 0;
+        this.randomLon = 0;
     }
     initMap() {
         var centro = { lat: 43.3672702, lng: -5.8502461 };
         var mapaGeoposicionado = new google.maps.Map(document.getElementById('map'), {
             zoom: 8,
             center: centro,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+            mapTypeId: google.maps.MapTypeId.SATELLITE
         });
 
         var infoWindow = new google.maps.InfoWindow;
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
+
+                var lat = 0;
+                var lon = 0;
+                lat = parseFloat(Math.random() * (180) - 90);
+                lat = Math.round(lat * 10000) / 10000
+                lon = parseFloat(Math.random() * (180) - 90);
+                lon = Math.round(lat * 10000) / 10000
                 var pos = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
+                    lat,
+                    lon
                 };
+
+                pos = new google.maps.LatLng({lat, lon});
 
                 infoWindow.setPosition(pos);
                 infoWindow.setContent('Localización encontrada');

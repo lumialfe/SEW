@@ -11,7 +11,7 @@ h1 {
     text-transform: uppercase;
     text-align: left;
     color: rgb(200, 160, 75);
-    font-size: 75%;
+    font-size: 100%;
     margin-bottom: 3%;
     margin-left: 2%;
 }
@@ -59,12 +59,12 @@ footer > a > img {
 input[type=button] {
     width: 70%;
     min-width: fit-content;
-    height: auto;
+    height: 60%;
     text-align: center;
     padding: 0;
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100%;
+    font-size: 120%;
     margin: 30%;
     /* margin-bottom: 1%; */
     border: 0px;
@@ -87,12 +87,12 @@ input {
 }
 
 div {
-    display: inline-block;
+    display: flexbox;
     margin: auto;
     padding: 1%;
     background-color: white;
     height: 100%;
-    max-width: 90%;
+    max-width: 70%;
     min-width: fit-content;
     border-radius: 2%;
 }

@@ -110,5 +110,6 @@ div div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
+    grid-column-gap: 10%;
     height: fit-content;
 }

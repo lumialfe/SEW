@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileLoader</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+
+</head>
+
+<body>
+
+    <h1><img src="logo.png" alt="pageLogo" /></h1>
+
+    <hr/>
+
+    <h3>Escoge un archivo:</h3>
+    <input type="file" id="archive" onchange="fl.load(this.files);">
+
+    <hr/>
+
+    <div id="result">
+        <h3>Resultado:</h3>
+        <p id="nombreArchivo"></p>
+        <p id="tamañoArchivo"></p>
+        <p id="tipoArchivo"></p>
+        <p id="ultimaModificacion"></p>
+        <p id="contenidoArchivo"></p>
+        <p id="areaTexto"></p>
+        <p id="errorLectura"></p>
+    </div>
+
+    <footer>
+        <a
+            href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-12%2FEjercicio12.html">
+            <img style="border:0;width:50px;height:50px" src="HTML5.png" alt=" HTML5 Válido!" /></a>
+
+        <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-12%2FEjercicio12.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img src="CSS3.png" alt="CSS Válido" /></a>
+    </footer>
+
+</body>
+
+</html>

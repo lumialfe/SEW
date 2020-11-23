@@ -11,17 +11,29 @@
 
 </head>
 
-<body>
+<body onload="geo.showMap()">
 
     <h1><img src="logo.png" alt="pageLogo" /></h1>
 
+    <p>The rules of the game are simple, you'll be dropped in a random location of Asturies.</p>
+    <p>Your goal is to guess the coordinates (latituted and longitude) of the position signaled in the map.</p>
+    <p>Good Luck!</p>
+
     <hr />
 
-    <input type="button" value="Start" id="startButton" onclick="geo.getRandomCoordinates()"/>
+    <!-- <input type="button" value="Guess" id="guessButton" onclick="geo.guess()"/> -->
 
-    <div id="map"></div>
+    <div id="gaem">
+        <label for="inLat">Latitude (±X.XXXXXX):</label>
+        <input type="text" id="inLat" value="" />
+        <label for="inLon">Longitude (±X.XXXXXX):</label>
+        <input type="text" id="inLon" value="" />
+        <input type="button" value="Guess" id="guessButton" onclick="geo.guess()" />
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=geo.initMap"></script>
+        <br />
+
+        <div id="map"></div>
+    </div>
 
     <footer>
         <a

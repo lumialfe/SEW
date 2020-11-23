@@ -14,11 +14,15 @@ class FileLoader {
         var contenido = document.getElementById("contenidoArchivo");
         var areaVisualizacion = document.getElementById("areaTexto");
         var errorArchivo = document.getElementById("errorLectura");
+
+        areaVisualizacion.innerText = "";
+        errorArchivo.innerText = "";
+
         nombre.innerText = "Nombre del archivo: " + archivo.name;
         tamaño.innerText = "Tamaño del archivo: " + archivo.size + " bytes";
-        tipo.innerText = "Tipo del archivo: " + archivo.type;
-        ultima.innerText = "Fecha de la última modificación: " + archivo.lastModifiedDate;
-        contenido.innerText = "Contenido del archivo de texto:"
+        tipo.innerText = "Formato del archivo: " + archivo.type;
+        ultima.innerText = "Última vez modificado: " + archivo.lastModifiedDate;
+        contenido.innerText = "Previsualización del archivo de texto:"
 
         //Solamente admite archivos de tipo texto
         if ((archivo.type.match("text/plain")) || (archivo.type.match("application/json")) || (archivo.type.match("text/xml"))) {
@@ -31,7 +35,7 @@ class FileLoader {
             }
             lector.readAsText(archivo);
         } else {
-            errorArchivo.innerText = "Error : Formato de archivo no válido";
+            errorArchivo.innerText = "Error : Formato de archivo no válido para la previsualización de texto.";
         }
         
     }

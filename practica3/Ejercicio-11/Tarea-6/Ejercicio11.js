@@ -22,12 +22,8 @@ class DyanamicMap {
                 lat = Math.round(lat * 10000) / 10000
                 lon = parseFloat(Math.random() * (180) - 90);
                 lon = Math.round(lat * 10000) / 10000
-                var pos = {
-                    lat,
-                    lon
-                };
-
-                pos = new google.maps.LatLng({lat, lon});
+                
+                var pos = new google.maps.LatLng({lat, lon});
 
                 infoWindow.setPosition(pos);
                 infoWindow.setContent('Localización encontrada');

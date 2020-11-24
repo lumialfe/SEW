@@ -13,20 +13,20 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: center;
-    color: #000000;
+    color: #ff9900;
     margin: 5%;
 }
 
 h2 {
     text-transform: uppercase;
     text-align: center;
-    color: #000000;
+    color: #ff9900;
 }
 
 h3 {
     text-transform: uppercase;
     text-align: center;
-    color:#000000;
+    color:#ff9900;
 }
 
 h4 {
@@ -133,4 +133,8 @@ ul {
     color: #000000;
     margin: auto;
     margin-bottom: 10%;
+}
+
+label {
+    color: #ff9900;
 }

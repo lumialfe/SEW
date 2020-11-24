@@ -3,18 +3,18 @@ https://lumialfe.github.io/SEW/practica3/Ejercicio-2/Ejercicio2.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-3/CalculadoraBasica.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-4/CalculadoraCientifica.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-5/CalculadoraRPN.html
-https://lumialfe.github.io/SEW/practica3/Ejercicio-6/index.html
-https://lumialfe.github.io/SEW/practica3/Ejercicio-6/Preguntas.html
+https://lumialfe.github.io/SEW/practica3/Ejercicio-6/index.html w
+https://lumialfe.github.io/SEW/practica3/Ejercicio-6/Preguntas.html w
 https://lumialfe.github.io/SEW/practica3/Ejercicio-7/Ejercicio7.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-8/Ejercicio8.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-9/Ejercicio9.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-10/Ejercicio10.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-1/Ejercicio11.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-2/Ejercicio11.html
-https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-3/Ejercicio11.html -NOT TAWED
-https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-4/Ejercicio11.html
-https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-5/Ejercicio11.html
-https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-6/Ejercicio11.html
+https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-3/Ejercicio11.html t
+https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-4/Ejercicio11.html 
+https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-5/Ejercicio11.html 
+https://lumialfe.github.io/SEW/practica3/Ejercicio-11/Tarea-6/Ejercicio11.html 
 https://lumialfe.github.io/SEW/practica3/Ejercicio-12/Ejercicio12.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-13/Tarea-1/MapaKML.html
 https://lumialfe.github.io/SEW/practica3/Ejercicio-13/Tarea-2/MapaGeoJSON.html

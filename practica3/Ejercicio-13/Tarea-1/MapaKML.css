@@ -2,7 +2,7 @@ body {
     width: 90%;
     margin: 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
@@ -19,6 +19,7 @@ h2 {
     text-transform: uppercase;
     text-align: left;
     color: black;
+    font-size: large;
 }
 
 h3 {

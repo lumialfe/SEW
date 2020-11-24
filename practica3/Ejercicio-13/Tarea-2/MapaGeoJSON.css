@@ -1,0 +1,103 @@
+body {
+    width: 90%;
+    margin: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    margin: 5%;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    margin-top: 2%;
+}
+
+h4 {
+    margin-top: 5%;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+}
+
+p {
+    font-size: 90%;
+    color: black;
+    width: 100%;
+    margin-left: 2%;
+    text-align: left;
+}
+
+footer {
+    border-top: black 2px solid;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    padding: 2%;
+    padding-top: 3%;
+    text-align: left;
+}
+
+footer>a>img {
+    height: 50px;
+    width: 50px;
+    margin-right: 2%;
+}
+
+h1 img {
+    margin: auto;
+    width: 40%;
+}
+
+hr {
+    border-top: 2px solid black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+div img {
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+    height: auto;
+    border: 2px solid white;
+}
+
+label {
+    margin-left: 2%;
+    margin-right: auto;
+    font-size: 90%;
+    text-align: left;
+    float: left;
+}
+
+input[type="file"] {
+    float: left;
+    margin-left: 2%;
+    margin-top: 0.5%;
+    margin-right: auto;
+    width: 50%;
+}
+
+p[id="areaTexto"], p[id="errorLectura"] {
+    margin-left: 5%;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}

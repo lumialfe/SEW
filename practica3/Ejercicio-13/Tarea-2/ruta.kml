@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Placemark>
+			<name>
+				Ruta Del Mar
+			</name>
+			<LineString>
+				<extrude>
+					1
+				</extrude>
+				<tessellate>
+					1
+				</tessellate>
+				<coordinates>
+					-6.2312339,43.5620451,100
+					-6.2135436,43.5743393,100
+					-6.2007735,43.5614151,100
+					-6.1909888,43.5778326,100
+					-6.1946743,43.5523119,100
+					-6.1810255,43.5605427,100
+				</coordinates>
+				<altitudeMode>
+					relativeToGround
+				</altitudeMode>
+			</LineString>
+			<Style>
+				id='lineaRoja'>
+				<LineStyle>
+					<color>
+						#ff0000ff
+					</color>
+					<width>
+						5
+					</width>
+				</LineStyle>
+			</Style>
+		</Placemark>
+	</Document>
+</kml>

@@ -9,14 +9,14 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: left;
-    color: rgb(200, 160, 75);
+    color: rgb(0, 50, 50);
     font-size: 75%;
     margin-bottom: 3%;
     margin-left: 2%;
 }
 
 footer {
-    border-top: rgb(200, 160, 75) 2px solid;
+    border-top: rgb(0, 50, 50) 2px solid;
     margin-top: 5%;
     padding: 2%;
     padding-top: 3%;
@@ -53,7 +53,7 @@ input[value="C"], input[value="CS"], input[value="←"] {
 }
 
 input[value="SHIFT"] {
-    background-color: #5368df;
+    background-color: #99a8ff;
 }
 
 input[value="0"], input[value="1"], input[value="2"], input[value="3"], input[value="4"], input[value="5"], input[value="6"], input[value="7"], input[value="8"], input[value="9"] {
@@ -116,7 +116,7 @@ div[id="stack"] {
     margin-bottom: 3%;
     background-color: white;
     vertical-align: bottom;
-    border: 2px solid rgb(200, 160, 75);
+    border: 2px solid rgb(0, 50, 50);
     margin: auto;
     margin-bottom: 3%;
     margin-top: 3%;
@@ -138,7 +138,7 @@ div p {
 label {
     text-transform: uppercase;
     text-align: center;
-    color: rgb(200, 160, 75);
+    color: rgb(0, 50, 50);
     margin-bottom: 5%;
     font-size: small;
 }

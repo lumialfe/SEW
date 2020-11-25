@@ -1,6 +1,6 @@
 class Canvas {
     constructor() {
-        this.size = 25;
+        // this.size = 25;
     }
 
     clean() {
@@ -9,6 +9,8 @@ class Canvas {
         localStorage.color = '#000000';
         var size = document.getElementById('size');
         size.selectedIndex = 1;
+        document.getElementById('size').disabled = false;
+        document.getElementById('size').title = "";
         var canvas = document.getElementById('canvas');
         const context = canvas.getContext('2d');
         context.clearRect(0, 0, canvas.width, canvas.height);
@@ -47,6 +49,9 @@ class Canvas {
     }
 
     paint() {
+        document.getElementById('size').disabled = true;
+        document.getElementById('size').title = "No es posible cambiar el tamaño del pixel una vez se empieza a pintar."
+
         var canvas = document.getElementById("canvas");
         var context = canvas.getContext('2d');
 
@@ -54,7 +59,7 @@ class Canvas {
         var elemTop = canvas.offsetTop + canvas.clientTop;
 
         const color = document.getElementById('color').value;
-        var tileSize = this.size;
+        const tileSize = document.getElementById('size').options[size.selectedIndex].value;
 
         canvas.addEventListener('click', function (event) {
 
@@ -121,7 +126,6 @@ class Canvas {
     }
 
     changepixelsize() {
-        var d = this.size;
         var size = document.getElementById('size');
         size = size.options[size.selectedIndex].value;
         this.size = parseInt(size);

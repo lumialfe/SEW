@@ -5,13 +5,13 @@ class DyanamicMap {
     }
     initMap() {
         var centro = { lat: 43.3672702, lng: -5.8502461 };
-        var mapaGeoposicionado = new google.maps.Map(document.getElementById('map'), {
+        const mapaGeoposicionado = new google.maps.Map(document.getElementById('map'), {
             zoom: 8,
             center: centro,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         });
 
-        var infoWindow = new google.maps.InfoWindow;
+        var marker = new google.maps.Marker;
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
                 var pos = {
@@ -19,10 +19,11 @@ class DyanamicMap {
                     lng: position.coords.longitude
                 };
 
-                infoWindow.setPosition(pos);
-                infoWindow.setContent('Localización encontrada');
-                infoWindow.open(mapaGeoposicionado);
-                mapaGeoposicionado.setCenter(pos);
+                marker.setPosition(pos);
+                // infoWindow.setContent('Localización encontrada');
+                // infoWindow.open(mapaGeoposicionado);
+                // mapaGeoposicionado.setCenter(pos);
+                marker.setMap(mapaGeoposicionado);
             }, function () {
                 handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
             });

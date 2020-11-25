@@ -84,6 +84,8 @@ label {
     font-size: 90%;
     text-align: left;
     float: left;
+    background-color: white;
+    color: black;
 }
 
 input[type="file"] {
@@ -96,13 +98,4 @@ input[type="file"] {
 
 p[id="areaTexto"], p[id="errorLectura"] {
     margin-left: 5%;
-}
-
-::-moz-placeholder {
-    color: #333;
-    opacity: 1;
-}
- 
-::-webkit-input-placeholder {
-    color: #333;
 }

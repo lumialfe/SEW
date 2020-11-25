@@ -6,6 +6,7 @@ class Canvas {
     clean() {
         $("#canvas").css("background-image", "");
         document.getElementById('color').value = '#000000';
+        localStorage.color = '#000000';
         var size = document.getElementById('size');
         size.selectedIndex = 1;
         var canvas = document.getElementById('canvas');

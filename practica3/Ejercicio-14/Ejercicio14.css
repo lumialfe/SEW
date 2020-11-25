@@ -3,11 +3,11 @@ body {
     margin: 5%;
     margin-top: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color:white;
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
-    min-width: 10d00px;
+    min-width: 1000px;
 }
 
 h1 {
@@ -43,6 +43,7 @@ h4 {
 p {
     font-size: 90%;
     color: black;
+    background-color: white;
     width: 100%;
     text-align: left;
     float: right;

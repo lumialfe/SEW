@@ -29,11 +29,6 @@ class Canvas {
         link.download = filename;
         link.href = image;
         link.click();
-
-
-        // var myWindow = window.open("Save", "Save", "width=500,height=500");
-        // myWindow.document.write('<img src="' + image + '"/>');
-        // document.write('<img src="' + image + '"/>');
     }
 
     changeBG(files) {
@@ -61,9 +56,6 @@ class Canvas {
         const color = this.color;
         var tileSize = this.size;
 
-        document.addEventListener('offline', function (e) { alert('Connection Lost.'); });
-        document.addEventListener('online', function (e) { alert('Back Online.') });
-
         canvas.addEventListener('click', function (event) {
 
             var tileWidth = tileSize;
@@ -80,9 +72,6 @@ class Canvas {
 
             var x = xIndex * tileWidth;
             var y = yIndex * tileHeight;
-
-            // console.log('x: ' + x);
-            // console.log('y: ' + y);
 
             context.fillStyle = color;
             context.fillRect(x, y, tileWidth, tileHeight);
@@ -117,17 +106,11 @@ class Canvas {
         var canvas = document.getElementById("canvas");
         canvas.width = 500;
         canvas.height = 500;
-        // this.paint;
-        document.addEventListener('offline', function (e) { alert('Connection Lost.'); });
-        document.addEventListener('online', function (e) { alert('Back Online.') });
     }
 
     changecolor() {
         var color = document.getElementById('color').value;
-        // console.log(color);
         this.color = color;
-        // console.log(this.color);
-        // this.paint;
     }
 
     changepixelsize() {
@@ -135,7 +118,6 @@ class Canvas {
         var size = document.getElementById('size');
         size = size.options[size.selectedIndex].value;
         this.size = parseInt(size);
-        // this.paint;
     }
 
 }

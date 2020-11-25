@@ -93,6 +93,28 @@ class Canvas {
 
         }, false);
 
+        canvas.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+
+            var tileWidth = tileSize;
+            var tileHeight = tileSize;
+
+            var rect = canvas.getBoundingClientRect();
+
+            var mx = event.clientX - rect.left;
+            var my = event.clientY - rect.top;
+
+            /// get index from mouse position
+            var xIndex = Math.round((mx - tileWidth * 0.5) / tileWidth);
+            var yIndex = Math.round((my - tileHeight * 0.5) / tileHeight);
+
+            var x = xIndex * tileWidth;
+            var y = yIndex * tileHeight;
+
+            context.clearRect(x, y, tileWidth, tileHeight);
+
+        }, false);
+
     }
 
     load() {

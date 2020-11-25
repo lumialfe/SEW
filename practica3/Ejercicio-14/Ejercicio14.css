@@ -1,11 +1,13 @@
 body {
     width: 90%;
     margin: 5%;
+    margin-top: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(255, 255, 255);
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
+    min-width: 1000px;
 }
 
 h1 {
@@ -42,8 +44,8 @@ p {
     font-size: 90%;
     color: black;
     width: 100%;
-    margin-left: 2%;
     text-align: left;
+    float: right;
 }
 
 footer {
@@ -77,6 +79,7 @@ canvas {
     width: 500px;
     background-color: rgb(255, 255, 255);
     border: 5px solid black;
+    margin-top: 4%;
 }
 
 div[id="controllers"] {

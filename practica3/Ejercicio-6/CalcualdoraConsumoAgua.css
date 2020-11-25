@@ -136,14 +136,5 @@ ul {
 }
 
 label {
-    color: #ff9900;
-}
-
-::-moz-placeholder {
-    color: #333;
-    opacity: 1;
-}
- 
-::-webkit-input-placeholder {
-    color: #333;
+    color: #ffd493;
 }

@@ -1,6 +1,5 @@
 class Canvas {
     constructor() {
-        this.color = '#000000';
         this.size = 25;
     }
 
@@ -53,7 +52,7 @@ class Canvas {
         var elemLeft = canvas.offsetLeft + canvas.clientLeft;
         var elemTop = canvas.offsetTop + canvas.clientTop;
 
-        const color = this.color;
+        const color = document.getElementById('color').value;
         var tileSize = this.size;
 
         canvas.addEventListener('click', function (event) {
@@ -106,11 +105,18 @@ class Canvas {
         var canvas = document.getElementById("canvas");
         canvas.width = 500;
         canvas.height = 500;
+
+        if (typeof (Storage) !== "undefined") {
+            document.getElementById('color').value = localStorage.color;
+        } else {
+            // Sorry! No Web Storage support..
+        }
     }
 
     changecolor() {
         var color = document.getElementById('color').value;
         this.color = color;
+        localStorage.color = color;
     }
 
     changepixelsize() {

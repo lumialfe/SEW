@@ -86,7 +86,7 @@ class Canvas {
 
         }, false);
 
-        canvas.addEventListener('contextmenu', function(event) {
+        canvas.addEventListener('contextmenu', function (event) {
             event.preventDefault();
 
             var tileWidth = tileSize;
@@ -115,6 +115,8 @@ class Canvas {
         canvas.width = 500;
         canvas.height = 500;
         // this.paint;
+        document.addEventListener('offline', function (e) { alert('Connection Lost.'); });
+        document.addEventListener('online', function (e) { alert('Back Online.') });
     }
 
     changecolor() {

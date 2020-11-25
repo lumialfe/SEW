@@ -59,16 +59,9 @@ class Canvas {
         var elemTop = canvas.offsetTop + canvas.clientTop;
 
         const color = this.color;
-        const tileSize = this.size;
-        // console.log(color);
+        var tileSize = this.size;
 
         canvas.addEventListener('click', function (event) {
-
-            // var tileWidth = (canvas.width / 20);
-            // var tileHeight = (canvas.height / 20);
-
-            // console.log(tileHeight);
-            // console.log(tileWidth);
 
             var tileWidth = tileSize;
             var tileHeight = tileSize;
@@ -121,7 +114,7 @@ class Canvas {
         var canvas = document.getElementById("canvas");
         canvas.width = 500;
         canvas.height = 500;
-        this.paint;
+        // this.paint;
     }
 
     changecolor() {
@@ -129,14 +122,15 @@ class Canvas {
         // console.log(color);
         this.color = color;
         // console.log(this.color);
-        this.paint;
+        // this.paint;
     }
 
     changepixelsize() {
+        var d = this.size;
         var size = document.getElementById('size');
         size = size.options[size.selectedIndex].value;
-        this.size = size;
-        this.paint;
+        this.size = parseInt(size);
+        // this.paint;
     }
 
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+    <title>Paint it like it's hot</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="Ejercicio14.js"></script>
+
+</head>
+
+<body onload="canvas.load()">
+
+    <h1><img src="logo.png" alt="pageLogo" /></h1>
+
+    <hr />
+    <div id="controllers">
+        <h2>Configuración:</h2><br />
+        <label for="archive">Pincha para seleccionar un fondo de lienzo:</label>
+        <br />
+        <input type="file" id="archive" accept=".jpg" onchange="canvas.changeBG(this.files);">
+
+        <br />
+        <br />
+
+        <label for="color">Pincha para seleccionar un color:</label>
+        <br />
+        <input type="color" id="color" onchange="canvas.changecolor()" />
+
+        <br />
+        <br />
+
+        <label for="size">Pincha para seleccionar un tamaño de pixel:</label>
+        <br />
+        <select name="pixel_size" id="size" onchange="canvas.changepixelsize()">
+            <option value="10">10px</option>
+            <option value="25" selected="selected">25px</option>
+            <option value="50">50px</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="save">Pincha para descargar:</label>
+        <br />
+        <input type="button" id="save" value="Descargar" onclick="canvas.save()" />
+
+        <br />
+        <br />
+
+        <label for="save">Pincha para empezar de nuevo:</label>
+        <br />
+        <input type="button" id="clean" value="Nuevo" onclick="canvas.clean()" />
+
+        <br />
+        <br />
+    </div>
+
+    <canvas id="canvas" onclick="canvas.paint()"></canvas>
+
+    <footer>
+        <a
+            href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-14%2FEjercicio14.html">
+            <img style="border:0;width:50px;height:50px" src="HTML5.png" alt=" HTML5 Válido!" /></a>
+
+        <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flumialfe.github.io%2FSEW%2Fpractica3%2FEjercicio-14%2FEjercicio14.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img src="CSS3.png" alt="CSS Válido" /></a>
+    </footer>
+
+</body>
+
+</html>

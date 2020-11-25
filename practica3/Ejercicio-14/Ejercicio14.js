@@ -61,6 +61,9 @@ class Canvas {
         const color = this.color;
         var tileSize = this.size;
 
+        document.addEventListener('offline', function (e) { alert('Connection Lost.'); });
+        document.addEventListener('online', function (e) { alert('Back Online.') });
+
         canvas.addEventListener('click', function (event) {
 
             var tileWidth = tileSize;

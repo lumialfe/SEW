@@ -22,7 +22,7 @@ class DyanamicMap {
                 marker.setPosition(pos);
                 // infoWindow.setContent('Localización encontrada');
                 // infoWindow.open(mapaGeoposicionado);
-                // mapaGeoposicionado.setCenter(pos);
+                mapaGeoposicionado.setCenter(pos);
                 marker.setMap(mapaGeoposicionado);
             }, function () {
                 handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());

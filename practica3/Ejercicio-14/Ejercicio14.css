@@ -41,7 +41,7 @@ h4 {
 }
 
 p {
-    font-size: 120%;
+    font-size: 200%;
     color: black;
     background-color: white;
     width: 100%;
@@ -100,7 +100,7 @@ select {
 }
 
 label {
-    font-size: 120%;
+    font-size: 200%;
     color: black;
     background-color: white;
     width: 100%;
@@ -108,5 +108,5 @@ label {
 }
 
 option, select {
-    font-size: 120%;
+    font-size: 200%;
 }

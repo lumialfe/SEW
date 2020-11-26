@@ -89,7 +89,7 @@ input {
 }
 
 div {
-    display: flexbox;
+    /* display: flexbox; */
     margin: auto;
     padding: 1%;
     background-color: white;

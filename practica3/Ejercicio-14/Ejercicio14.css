@@ -41,7 +41,7 @@ h4 {
 }
 
 p {
-    font-size: 110%;
+    font-size: 120%;
     color: black;
     background-color: white;
     width: 100%;
@@ -91,6 +91,7 @@ div[id="controllers"] {
 input {
     margin-top: 5%;
     margin-bottom: 10%;
+    font-size: 110%;
 }
 
 select {
@@ -99,9 +100,13 @@ select {
 }
 
 label {
-    font-size: 110%;
+    font-size: 120%;
     color: black;
     background-color: white;
     width: 100%;
     text-align: left;
+}
+
+option, select {
+    font-size: 120%;
 }

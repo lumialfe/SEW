@@ -114,7 +114,7 @@ class Canvas {
         if (typeof (Storage) !== "undefined") {
             document.getElementById('color').value = localStorage.color;
         } else {
-            // Sorry! No Web Storage support..
+            document.getElementById('color').value = "#000000";
         }
 
         document.addEventListener('keyup', function (e) {

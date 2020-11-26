@@ -105,6 +105,14 @@ class Canvas {
 
         }, false);
 
+        document.addEventListener('keydown', function (e) {
+            if (e.code === "p") {
+                var size = document.getElementById('size');
+                size = size.options[size.selectedIndex].value;
+                var x = prompt("Enter X coordinate (from 0 to " + 500/size -1);
+            }
+          });
+
     }
 
     load() {

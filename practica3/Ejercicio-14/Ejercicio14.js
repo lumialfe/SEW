@@ -111,29 +111,29 @@ class Canvas {
         canvas.width = 500;
         canvas.height = 500;
 
-        if (typeof (Storage) !== "undefined") {
-            document.getElementById('color').value = localStorage.color;
-        } else {
-            document.getElementById('color').value = "#000000";
+            if (typeof (Storage) !== "undefined") {
+                document.getElementById('color').value = localStorage.color;
+            } else {
+                document.getElementById('color').value = "#000000";
+            }
+
+            document.addEventListener('keyup', function (e) {
+                alert("Sorry, keyboard input is not available yet");
+            });
         }
 
-        document.addEventListener('keyup', function (e) {
-            alert("Sorry, keyboard input is not available yet");
-        });
-    }
+        changecolor() {
+            var color = document.getElementById('color').value;
+            this.color = color;
+            localStorage.color = color;
+        }
 
-    changecolor() {
-        var color = document.getElementById('color').value;
-        this.color = color;
-        localStorage.color = color;
-    }
+        changepixelsize() {
+            var size = document.getElementById('size');
+            size = size.options[size.selectedIndex].value;
+            this.size = parseInt(size);
+        }
 
-    changepixelsize() {
-        var size = document.getElementById('size');
-        size = size.options[size.selectedIndex].value;
-        this.size = parseInt(size);
     }
-
-}
 
 var canvas = new Canvas();

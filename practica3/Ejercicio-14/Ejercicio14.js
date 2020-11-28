@@ -81,6 +81,21 @@ class Canvas {
             context.fillStyle = color;
             context.fillRect(x, y, tileWidth, tileHeight);
 
+            // var c = document.getElementById('canvas');
+            // var image = c.toDataURL("image/png");
+
+            // var a = document.createElement('a');
+            // a.href = image;
+
+            // try {
+            //     localStorage.setItem("imgCanvas", a);
+            // }
+            // catch (e) {
+            //     console.log("Storage failed: " + e);
+            // }
+
+
+
         }, false);
 
         canvas.addEventListener('contextmenu', function (event) {
@@ -106,34 +121,49 @@ class Canvas {
         }, false);
     }
 
+    // saveInCache() {
+    //     var imgCanvas = document.createElement("canvas"),
+    //     imgContext = imgCanvas.getContext("2d");
+    //     var imgAsDataURL = imgCanvas.toDataURL("image/png");
+    //     try {
+    //         localStorage.setItem("canvas", imgCanvas);
+    //     }
+    //     catch (e) {
+    //         console.log("Storage failed: " + e);
+    //     }
+    // }
+
     load() {
         var canvas = document.getElementById("canvas");
         canvas.width = 500;
         canvas.height = 500;
 
-            if (typeof (Storage) !== "undefined") {
-                document.getElementById('color').value = localStorage.color;
-            } else {
-                document.getElementById('color').value = "#000000";
-            }
+        // var context = canvas.getContext('2d');
+        // context.drawImage(localStorage.getItem("imgCanvas"), 0, 0, 500, 500);
 
-            document.addEventListener('keyup', function (e) {
-                alert("Sorry, keyboard input is not available yet");
-            });
+        if (typeof (Storage) !== "undefined") {
+            document.getElementById('color').value = localStorage.color;
+        } else {
+            document.getElementById('color').value = "#000000";
         }
 
-        changecolor() {
-            var color = document.getElementById('color').value;
-            this.color = color;
-            localStorage.color = color;
-        }
-
-        changepixelsize() {
-            var size = document.getElementById('size');
-            size = size.options[size.selectedIndex].value;
-            this.size = parseInt(size);
-        }
-
+        document.addEventListener('keyup', function (e) {
+            alert("Sorry, keyboard input is not available yet");
+        });
     }
+
+    changecolor() {
+        var color = document.getElementById('color').value;
+        this.color = color;
+        localStorage.color = color;
+    }
+
+    changepixelsize() {
+        var size = document.getElementById('size');
+        size = size.options[size.selectedIndex].value;
+        this.size = parseInt(size);
+    }
+
+}
 
 var canvas = new Canvas();

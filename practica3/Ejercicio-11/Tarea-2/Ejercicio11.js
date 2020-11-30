@@ -32,7 +32,7 @@ class Geolocalización {
 
     show(){
         var ubicacion=document.getElementById('map');
-        var datos='<p><b>'+ this.mensaje + '</b></p>'; 
+        var datos='<p><strong>'+ this.mensaje + '</strong></p>'; 
         datos+='<p>Longitud: '+this.longitud +'º</p>'; 
         datos+='<p>Latitud: '+this.latitud +'º</p>';
         datos+='<p>Precisión: '+ this.precision +' m</p>';

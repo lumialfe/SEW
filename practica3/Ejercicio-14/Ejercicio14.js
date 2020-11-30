@@ -81,21 +81,6 @@ class Canvas {
             context.fillStyle = color;
             context.fillRect(x, y, tileWidth, tileHeight);
 
-            // var c = document.getElementById('canvas');
-            // var image = c.toDataURL("image/png");
-
-            // var a = document.createElement('a');
-            // a.href = image;
-
-            // try {
-            //     localStorage.setItem("imgCanvas", a);
-            // }
-            // catch (e) {
-            //     console.log("Storage failed: " + e);
-            // }
-
-
-
         }, false);
 
         canvas.addEventListener('contextmenu', function (event) {
@@ -147,9 +132,13 @@ class Canvas {
             document.getElementById('color').value = "#000000";
         }
 
-        document.addEventListener('keyup', function (e) {
-            alert("Sorry, keyboard input is not available yet");
+        canvas.addEventListener('keyup', function (e) {
+            this.paintWithKeyboard();
         });
+    }
+
+    paintWithKeyboard() {
+        var x = prompt();
     }
 
     changecolor() {

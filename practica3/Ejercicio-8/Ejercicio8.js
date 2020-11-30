@@ -22,9 +22,9 @@ class Meteo {
                 $("#weather").append("<h2>El Tiempo en " + this.datos.name + " (" + this.datos.sys.country + ") [" + this.datos.coord.lat + ", " + this.datos.coord.lon + "] </h2>");
                 $("#weather").append('<img src="http://openweathermap.org/img/wn/' + this.datos.weather[0].icon + '@2x.png" alt ="icono del tiempo"/>');
 
-                $("#weather").append('<p id="temp">' + this.datos.main.temp + 'ºC</p>');
-                $("#weather").append('<p id="tempmin"> ↓ ' + this.datos.main.temp_min + 'ºC</p>');
-                $("#weather").append('<p id="tempmax"> ↑' + this.datos.main.temp_max + 'ºC</p>');
+                $("#weather").append('<p class="temp">' + this.datos.main.temp + 'ºC</p>');
+                $("#weather").append('<p class="tempmin"> ↓ ' + this.datos.main.temp_min + 'ºC</p>');
+                $("#weather").append('<p class="tempmax"> ↑' + this.datos.main.temp_max + 'ºC</p>');
 
                 $("#weather").append("<h3>" + this.datos.weather[0].description + "</h3>");
 

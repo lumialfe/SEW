@@ -68,6 +68,8 @@ class Canvas {
 
             var rect = canvas.getBoundingClientRect();
 
+            console.log(event.clientX + "     " + event.clientY);
+
             var mx = event.clientX - rect.left;
             var my = event.clientY - rect.top;
 
@@ -77,6 +79,8 @@ class Canvas {
 
             var x = xIndex * tileWidth;
             var y = yIndex * tileHeight;
+
+            console.log(x + "      " + y);
 
             context.fillStyle = color;
             context.fillRect(x, y, tileWidth, tileHeight);
@@ -106,18 +110,6 @@ class Canvas {
         }, false);
     }
 
-    // saveInCache() {
-    //     var imgCanvas = document.createElement("canvas"),
-    //     imgContext = imgCanvas.getContext("2d");
-    //     var imgAsDataURL = imgCanvas.toDataURL("image/png");
-    //     try {
-    //         localStorage.setItem("canvas", imgCanvas);
-    //     }
-    //     catch (e) {
-    //         console.log("Storage failed: " + e);
-    //     }
-    // }
-
     load() {
         var canvas = document.getElementById("canvas");
         canvas.width = 500;
@@ -132,15 +124,72 @@ class Canvas {
             document.getElementById('color').value = "#000000";
         }
 
-        canvas.addEventListener('keyup', function (e) {
-            if (e.key == "p") {
-                var x = prompt("X coordinate (0-500): ");
-                var y = prompt("Y coordinate (0-500): ");
+        canvas.addEventListener('keyup', function (event) {
+            if (event.key == "p") {
+
+                const tileSize = document.getElementById('size').options[size.selectedIndex].value;
+
+                var x = parseInt(prompt("Paint: X coordinate (0-" + 475/tileSize + "): "));
+                var y = parseInt(prompt("Paint: Y coordinate (0-" + 475/tileSize + "): "));
+
+                x = x * tileSize;
+                y = y * tileSize;
+
+                document.getElementById('size').disabled = true;
+                document.getElementById('size').title = "No es posible cambiar el tamaño del pixel una vez se empieza a pintar."
+
+                var canvas = document.getElementById("canvas");
+                var context = canvas.getContext('2d');
+
+                const color = document.getElementById('color').value;
+                
+
+                var tileWidth = tileSize;
+                var tileHeight = tileSize;
+
+                var xIndex = Math.round((x - tileWidth * 0.5) / tileWidth);
+                var yIndex = Math.round((y - tileHeight * 0.5) / tileHeight);
+
+                var px = xIndex * tileWidth;
+                var py = yIndex * tileHeight;
+
+                console.log(px + "      " + py);
+
+                context.fillStyle = color;
+                context.fillRect(px, py, tileWidth, tileHeight);
             }
 
-            if (e.key == "p") {
-                var x = prompt();
-                var y = prompt();
+            if (event.key == "d") {
+                const tileSize = document.getElementById('size').options[size.selectedIndex].value;
+
+                var x = parseInt(prompt("Delete: X coordinate (0-" + 475/tileSize + "): "));
+                var y = parseInt(prompt("Delete: Y coordinate (0-" + 475/tileSize + "): "));
+
+                x = x * tileSize;
+                y = y * tileSize;
+
+                document.getElementById('size').disabled = true;
+                document.getElementById('size').title = "No es posible cambiar el tamaño del pixel una vez se empieza a pintar."
+
+                var canvas = document.getElementById("canvas");
+                var context = canvas.getContext('2d');
+
+                const color = document.getElementById('color').value;
+                
+
+                var tileWidth = tileSize;
+                var tileHeight = tileSize;
+
+                var xIndex = Math.round((x - tileWidth * 0.5) / tileWidth);
+                var yIndex = Math.round((y - tileHeight * 0.5) / tileHeight);
+
+                var px = xIndex * tileWidth;
+                var py = yIndex * tileHeight;
+
+                console.log(px + "      " + py);
+
+                context.fillStyle = color;
+                context.clearRect(px, py, tileWidth, tileHeight);
             }
 
         });

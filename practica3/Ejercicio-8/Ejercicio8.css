@@ -88,13 +88,13 @@ p[class="temp"] {
 }
 
 p[class="tempmin"] {
-    color: rgb(0, 89, 255);
+    color: rgb(0, 19, 126);
     margin-left: 10%;
     font-size: medium;
 }
 
 p[class="tempmax"] {
-    color: rgb(255, 38, 38);
+    color: rgb(151, 0, 0);
     margin-left: 10%;
     font-size: medium;
 }

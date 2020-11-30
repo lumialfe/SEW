@@ -6,6 +6,7 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
+    display: inline-block;
 }
 
 h1 {
@@ -19,7 +20,8 @@ h2 {
     text-transform: uppercase;
     text-align: left;
     color: black;
-    font-size: large;
+    font-size: larger;
+    margin-bottom: 3%;
 }
 
 h3 {
@@ -37,7 +39,7 @@ h4 {
 }
 
 p {
-    font-size: 110%;
+    font-size: 120%;
     color: black;
     width: 100%;
     margin-left: 2%;
@@ -80,21 +82,23 @@ div img {
 }
 
 label {
-    font-size: 110%;
+    font-size: 120%;
     float: left;
     background-color: white;
     color: black;
     margin-bottom: 2%;
+    margin-left: 2%;
 }
 
 input[type="file"] {
     float: left;
     margin-right: 100%;
     width: 50%;
-    font-size: 110%;
-    margin-bottom: 2%;
+    font-size: 120%;
+    margin-bottom: 5%;
+    margin-left: 2%;
 }
 
 p[id="areaTexto"], p[id="errorLectura"] {
-    margin-left: 5%;
+    margin-left: 10%;
 }

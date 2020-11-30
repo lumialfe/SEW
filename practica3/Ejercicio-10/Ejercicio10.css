@@ -100,13 +100,13 @@ label {
 }
 
 a {
-    color: rgb(126, 4, 14);
+    color:  rgb(85, 0, 7);
     font-weight: bold;
     text-decoration: none;
 }
 
 a :visited{
-    color: rgb(126, 4, 14);
+    color: rgb(85, 0, 7);
     font-weight: bold;
     text-decoration: none;
 }

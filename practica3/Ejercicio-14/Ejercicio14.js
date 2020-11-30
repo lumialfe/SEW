@@ -112,6 +112,7 @@ class Canvas {
 
     load() {
         var canvas = document.getElementById("canvas");
+        $('#canvas').attr("onclick", "canvas.paint()");
         canvas.width = 500;
         canvas.height = 500;
 

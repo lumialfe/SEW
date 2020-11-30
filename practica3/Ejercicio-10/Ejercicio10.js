@@ -24,7 +24,7 @@ class ImageReaper {
                     myNode.removeChild(myNode.lastChild);
                 }
 
-                $('#images').append('<p>SHOWING REAPS FROM <a href="https://flicker.com" target="_blank">FLICKR</a> FOR KEYWORD <b>"' + word.toUpperCase() + '"</b>: </p><br/>');
+                $('#images').append('<p>SHOWING REAPS FROM <a href="https://flicker.com" target="_blank">FLICKR</a> FOR KEYWORD <strong>"' + word.toUpperCase() + '"</strong>: </p><br/>');
 
 
                 $.each(data.items, function (i, item) {

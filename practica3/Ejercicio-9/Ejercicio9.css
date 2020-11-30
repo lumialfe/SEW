@@ -76,19 +76,19 @@ input {
     font-size: medium;
 }
 
-p[id="temp"] {
+p[class="temp"] {
     font-size: xx-large;
     font-weight: bolder;
     margin-left: 10%;
 }
 
-p[id="tempmin"] {
+p[class="tempmin"] {
     color: rgb(0, 19, 126);
     margin-left: 10%;
     font-size: medium;
 }
 
-p[id="tempmax"] {
+p[class="tempmax"] {
     color:  rgb(151, 0, 0);
     margin-left: 10%;
     font-size: medium;

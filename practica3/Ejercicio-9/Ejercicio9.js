@@ -67,9 +67,9 @@ class Meteo {
 
                  $("#weather").append('<img src="http://openweathermap.org/img/wn/' + weatherIcon + '@2x.png" alt ="icono del tiempo"/>');
 
-                 $("#weather").append('<p id="temp">' + temperatura + "ºC</p>");
-                 $("#weather").append('<p id="tempmin">' + temperaturaMin + "ºC</p>");
-                 $("#weather").append('<p id="tempmax">' + temperaturaMax + "ºC</p>");
+                 $("#weather").append('<p class="temp">' + temperatura + "ºC</p>");
+                 $("#weather").append('<p class="tempmax">↑ ' + temperaturaMax + "ºC</p>");
+                 $("#weather").append('<p class="tempmin">↓ ' + temperaturaMin + "ºC</p>");
 
                  $("#weather").append("<h3>" + descripcion + "</h3>");
 

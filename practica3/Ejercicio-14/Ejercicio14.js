@@ -175,9 +175,6 @@ class Canvas {
                 var canvas = document.getElementById("canvas");
                 var context = canvas.getContext('2d');
 
-                const color = document.getElementById('color').value;
-                
-
                 var tileWidth = tileSize;
                 var tileHeight = tileSize;
 
@@ -189,7 +186,6 @@ class Canvas {
 
                 console.log(px + "      " + py);
 
-                context.fillStyle = color;
                 context.clearRect(px, py, tileWidth, tileHeight);
             }
 

@@ -133,12 +133,17 @@ class Canvas {
         }
 
         canvas.addEventListener('keyup', function (e) {
-            this.paintWithKeyboard();
-        });
-    }
+            if (e.key == "p") {
+                var x = prompt("X coordinate (0-500): ");
+                var y = prompt("Y coordinate (0-500): ");
+            }
 
-    paintWithKeyboard() {
-        var x = prompt();
+            if (e.key == "p") {
+                var x = prompt();
+                var y = prompt();
+            }
+
+        });
     }
 
     changecolor() {

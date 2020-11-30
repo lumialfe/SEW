@@ -70,7 +70,7 @@ class Geolocalización {
         var sensor = "&sensor=false"; 
         
         this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor + apiKey;
-        ubicacion.innerHTML = "<img src='"+this.imagenMapa+"'/>";
+        ubicacion.innerHTML = "<img alt='tu localización' src='"+this.imagenMapa+"'/>";
     }
 }
 var geo = new Geolocalización();

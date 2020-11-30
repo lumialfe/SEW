@@ -64,7 +64,7 @@ class MapGame {
         var sensor = "&sensor=false";
 
         this.imagenMapa = url + centro + zoom + tamaño + marcador + mapType + sensor + apiKey;
-        ubicacion.innerHTML = "<img src='" + this.imagenMapa + "'/>";
+        ubicacion.innerHTML = "<img alt='Esta es la localización que debe adivinar' src='" + this.imagenMapa + "'/>";
     }
 }
 

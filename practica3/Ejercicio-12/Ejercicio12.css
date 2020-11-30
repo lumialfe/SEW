@@ -87,6 +87,7 @@ label {
     color: black;
     margin-bottom: 2%;
     margin-left: 2%;
+    font-size: 130%;
 }
 
 input[type="file"] {
@@ -95,6 +96,8 @@ input[type="file"] {
     width: 50%;
     margin-bottom: 5%;
     margin-left: 2%;
+    font-size: 130%;
+    width: 100%;
 }
 
 p[id="areaTexto"], p[id="errorLectura"] {

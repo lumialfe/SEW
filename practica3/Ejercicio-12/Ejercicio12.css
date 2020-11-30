@@ -37,7 +37,7 @@ h4 {
 }
 
 p {
-    font-size: 120%;
+    font-size: 110%;
     color: black;
     width: 100%;
     margin-left: 2%;
@@ -80,21 +80,19 @@ div img {
 }
 
 label {
-    margin-left: 2%;
-    margin-right: auto;
-    font-size: 90%;
-    text-align: left;
+    font-size: 110%;
     float: left;
     background-color: white;
     color: black;
+    margin-bottom: 2%;
 }
 
 input[type="file"] {
     float: left;
-    margin-left: 2%;
-    margin-top: 0.5%;
-    margin-right: auto;
+    margin-right: 100%;
     width: 50%;
+    font-size: 110%;
+    margin-bottom: 2%;
 }
 
 p[id="areaTexto"], p[id="errorLectura"] {

@@ -26,11 +26,12 @@ class ImageReaper {
 
                 $('#images').append('<p>SHOWING REAPS FROM <a href="https://flicker.com" target="_blank">FLICKR</a> FOR KEYWORD <strong>"' + word.toUpperCase() + '"</strong>: </p><br/>');
 
+                console.log(data);
 
                 $.each(data.items, function (i, item) {
                     // console.log(item.media);
                     // $('#images').append('img src="' + item.media.m);
-                    $("<img>").attr("src", item.media.m).attr("alt", item.media.m).appendTo("#images");
+                    $("<img>").attr("src", item.media.m).attr("alt", item.title).appendTo("#images");
                     if (i === 20) {
                         return false;
                     }

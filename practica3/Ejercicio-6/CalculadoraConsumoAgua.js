@@ -77,17 +77,17 @@ class CalculadoraAgua {
         node.textContent = "Este es tu resultado:";
         document.getElementById('preguntas').append(node);
 
-        node = document.createElement("h3");
-        node.textContent = "Consumes una media de ";
+        node = document.createElement("p");
+        node.textContent = "Consumes una media de " + l + " litros de agua al día";
         document.getElementById('preguntas').append(node);
 
-        node = document.createElement("h4");
-        node.textContent = l;
-        document.getElementById('preguntas').append(node);
+        // node = document.createElement("p");
+        // node.textContent = l;
+        // document.getElementById('preguntas').append(node);
 
-        node = document.createElement("h3");
-        node.textContent = "litros de agua al día";
-        document.getElementById('preguntas').append(node);
+        // node = document.createElement("p");
+        // node.textContent = "litros de agua al día";
+        // document.getElementById('preguntas').append(node);
 
         if (l <= 100) {
             node = document.createElement("p");

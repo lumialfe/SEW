@@ -36,5 +36,40 @@
 				</LineStyle>
 			</Style>
 		</Placemark>
+		<Placemark>
+			<name>
+				Ruta Del Mar
+			</name>
+			<LineString>
+				<extrude>
+					1
+				</extrude>
+				<tessellate>
+					1
+				</tessellate>
+				<coordinates>
+					-6.51763916015625,43.54058479482877,100
+					-6.472320556640625,43.550538775567375,100
+					-6.464080810546875,43.561486255932145,100
+					-6.422882080078125,43.54456658436357,100
+					-6.409149169921875,43.55153408323952,100
+					-6.39404296875,43.54854811091286,100
+				</coordinates>
+				<altitudeMode>
+					relativeToGround
+				</altitudeMode>
+			</LineString>
+			<Style>
+				id='lineaRoja'>
+				<LineStyle>
+					<color>
+						#ff0000ff
+					</color>
+					<width>
+						5
+					</width>
+				</LineStyle>
+			</Style>
+		</Placemark>
 	</Document>
 </kml>

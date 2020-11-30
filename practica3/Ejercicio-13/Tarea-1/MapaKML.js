@@ -16,53 +16,93 @@ class KMLMap {
             var coordinates = [];
             var lines;
 
+            var centro = { lat: 43.55651037504758, lng: -6.328125 };
+
+            const map = new google.maps.Map(
+                document.getElementById("map"),
+                {
+                    zoom: 12,
+                    center: centro,
+                    mapTypeId: "satellite",
+                }
+            );
+
             if (xmlDoc.documentElement.nodeName == "kml") {
 
                 for (const item of xmlDoc.getElementsByTagName('Placemark')) {
                     lines = item.getElementsByTagName('coordinates');
                     lines = lines[0].childNodes[0].data;
                     coordinates = lines.split("\n");
-                }
 
-                var path = [];
-                for (var j = 1; j < coordinates.length; j++) {
-                    // now split it into the lat and lng
-                    var coords = coordinates[j].split(",");
-                    // add the coords into the path
-                    var c = { lat: parseFloat(coords[1]), lng: parseFloat(coords[0]) };
-                    path.push(c);
-                }
-                console.log(path);
-
-                var centro = path[2];
-
-                const map = new google.maps.Map(
-                    document.getElementById("map"),
-                    {
-                        zoom: 13,
-                        center: centro,
-                        mapTypeId: "satellite",
+                    var path = [];
+                    for (var j = 1; j < coordinates.length; j++) {
+                        // now split it into the lat and lng
+                        var coords = coordinates[j].split(",");
+                        // add the coords into the path
+                        var c = { lat: parseFloat(coords[1]), lng: parseFloat(coords[0]) };
+                        path.push(c);
                     }
-                );
+                    console.log(path);
 
-                const cx = [
-                    path[0],
-                    path[1],
-                    path[2],
-                    path[3],
-                    path[4],
-                    path[5]
-                ];
+                    const cx = [
+                        path[0],
+                        path[1],
+                        path[2],
+                        path[3],
+                        path[4],
+                        path[5]
+                    ];
 
-                const flightPath = new google.maps.Polyline({
-                    path: cx,
-                    geodesic: true,
-                    strokeColor: "#FF0000",
-                    strokeOpacity: 1.0,
-                    strokeWeight: 2,
-                });
+                    const flightPath = new google.maps.Polyline({
+                        path: cx,
+                        geodesic: true,
+                        strokeColor: "#FF0000",
+                        strokeOpacity: 1.0,
+                        strokeWeight: 2,
+                    });
 
-                flightPath.setMap(map);
+                    flightPath.setMap(map);
+                }
+
+                // var path = [];
+                // for (var j = 1; j < coordinates.length; j++) {
+                //     // now split it into the lat and lng
+                //     var coords = coordinates[j].split(",");
+                //     // add the coords into the path
+                //     var c = { lat: parseFloat(coords[1]), lng: parseFloat(coords[0]) };
+                //     path.push(c);
+                // }
+                // console.log(path);
+
+                // var centro = path[2];
+
+                // const map = new google.maps.Map(
+                //     document.getElementById("map"),
+                //     {
+                //         zoom: 13,
+                //         center: centro,
+                //         mapTypeId: "satellite",
+                //     }
+                // );
+
+                // const cx = [
+                //     path[0],
+                //     path[1],
+                //     path[2],
+                //     path[3],
+                //     path[4],
+                //     path[5]
+                // ];
+
+                // const flightPath = new google.maps.Polyline({
+                //     path: cx,
+                //     geodesic: true,
+                //     strokeColor: "#FF0000",
+                //     strokeOpacity: 1.0,
+                //     strokeWeight: 2,
+                // });
+
+                // flightPath.setMap(map);
 
             } else {
                 throw "error while parsing"

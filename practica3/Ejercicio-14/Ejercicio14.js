@@ -112,9 +112,13 @@ class Canvas {
 
     load() {
         var canvas = document.getElementById("canvas");
-        $('#canvas').attr("onclick", "canvas.paint()");
+        
         canvas.width = 500;
         canvas.height = 500;
+
+        canvas.addEventListener('click', function (event) {
+            $('#canvas').attr("onclick", "canvas.paint()");
+        }, false);
 
         // var context = canvas.getContext('2d');
         // context.drawImage(localStorage.getItem("imgCanvas"), 0, 0, 500, 500);

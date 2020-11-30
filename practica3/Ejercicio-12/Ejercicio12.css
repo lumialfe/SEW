@@ -7,7 +7,7 @@ body {
     background-attachment: fixed;
     text-align: center;
     /* display: flexbox; */
-    font-size: 150%;
+    font-size: 100%;
 }
 
 h1 {
@@ -87,7 +87,7 @@ label {
     color: black;
     margin-bottom: 2%;
     margin-left: 2%;
-    font-size: 130%;
+    font-size: 100%;
 }
 
 input[type="file"] {
@@ -96,7 +96,7 @@ input[type="file"] {
     width: 50%;
     margin-bottom: 5%;
     margin-left: 2%;
-    font-size: 130%;
+    font-size: 100%;
     width: 100%;
 }
 

@@ -38,10 +38,12 @@ h4 {
 
 p {
     font-size: medium;
-    color: #fdab5e;
+    color: black;
     width: 50%;
     margin: auto;
     text-align: left;
+    background-color: white;
+    padding: 1.6%;
 }
 
 p b {
@@ -130,9 +132,12 @@ nav {
 ul {
     width: 50%;
     text-align: left;
-    color: #fdab5e;
+    color: black;
     margin: auto;
     margin-bottom: 10%;
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 label {

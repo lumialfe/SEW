@@ -5,7 +5,7 @@ class ImageReaper {
 
     load() {
         var word = this.search;
-        var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+        var flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
         $.getJSON(flickrAPI,
             {
                 tags: this.search,
@@ -24,7 +24,7 @@ class ImageReaper {
                     myNode.removeChild(myNode.lastChild);
                 }
 
-                $('#images').append('<p>SHOWING REAPS FROM <a href="http://flicker.com" target="_blank">FLICKR</a> FOR KEYWORD <b>"' + word.toUpperCase() + '"</b>: </p><br/>');
+                $('#images').append('<p>SHOWING REAPS FROM <a href="https://flicker.com" target="_blank">FLICKR</a> FOR KEYWORD <b>"' + word.toUpperCase() + '"</b>: </p><br/>');
 
 
                 $.each(data.items, function (i, item) {

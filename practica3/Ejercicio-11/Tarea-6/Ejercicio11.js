@@ -9,9 +9,17 @@ class MapGame {
         var inputLat = document.getElementById('inLat').value;
         var inputLon = document.getElementById('inLon').value;
 
-        if (inputLat=="" || inputLon=="") {
+        var inputLat = parseFloat(inputLat);
+        var inputLon = parseFloat(inputLon);
+
+        if (inputLat == "" || inputLon == "") {
             alert("Please enter valid coordinates");
-        } else {
+        }
+        
+        else if (isNaN(inputLat) || isNaN(inputLon)) {
+            alert("Please enter valid coordinates");
+        }
+        else {
             var cell = document.getElementById("gaem");
 
             if (cell.hasChildNodes()) {
@@ -19,11 +27,11 @@ class MapGame {
                     cell.removeChild(cell.firstChild);
                 }
             }
-    
+
             var ubicacion = document.getElementById('gaem');
             ubicacion.innerHTML = '<p><b>RESULTADO: </b></p><p>Tu seleccion: Latitud: ' + inputLat + ', Longitud: ' + inputLon + '.</p><p>Solución: Latitud: ' + this.randomLat + ', Longitud: ' + this.randomLon + '.</p>';
         }
-        
+
     }
 
     showMap() {

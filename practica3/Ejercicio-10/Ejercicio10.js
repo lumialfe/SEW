@@ -26,7 +26,7 @@ class ImageReaper {
 
                 $('#images').append('<p>SHOWING REAPS FROM <a href="https://flicker.com" target="_blank">FLICKR</a> FOR KEYWORD <strong>"' + word.toUpperCase() + '"</strong>: </p><br/>');
 
-                console.log(data);
+                // console.log(data);
 
                 $.each(data.items, function (i, item) {
                     // console.log(item.media);

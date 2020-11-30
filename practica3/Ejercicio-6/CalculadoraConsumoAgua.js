@@ -137,7 +137,7 @@ class CalculadoraAgua {
 
         node = document.createElement("a");
         node.setAttribute("href", "Preguntas.html");
-        node.setAttribute("type", "button");
+        // node.setAttribute("type", "button");
         child = document.createElement("div");
         child.setAttribute("id", "button");
         child.textContent = "Volver a Calcular";
